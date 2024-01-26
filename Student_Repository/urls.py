@@ -22,13 +22,9 @@ from django.conf.urls.static import static
 from django.contrib.auth.views import LoginView, LogoutView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('student_files.urls')),
-    #path("auth/", LoginView.as_view(template_name="prijava.html"), name="login"),
-    #path("logout/", LogoutView.as_view(), name="logout"),
+    path("", admin.site.urls),
+    path("admin/", admin.site.urls),
    
-    #path('api/student_files/<int:pk>/download_file/', StudentFileViewSet.as_view({'get': 'download_file'}), name='student_files-list'),
-
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
