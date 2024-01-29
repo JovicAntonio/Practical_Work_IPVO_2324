@@ -3,29 +3,50 @@ version: '3'
 services:
   web1:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver --insecure 172.19.0.3:80
     volumes:
       - .:/app
-      - ./media:/app/media  # Mount a volume for storing media files
-    expose:
-      - "8000"
+      - ./static:/app/static  # Mount a volume for storing media files
+      - ./media:/app/media:rw # Mount a volume for storing media files
+    networks:
+      mreza:
+        ipv4_address: 172.19.0.3
 
   web2:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver --insecure 172.19.0.4:80
     volumes:
       - .:/app
-      - ./media:/app/media  # Mount a volume for storing media files
-    expose:
-      - "8000"
-
-  nginx:
-    image: nginx:latest
+      - ./static:/app/static  # Mount a volume for storing media files
+      - ./media:/app/media:rw  # Mount a volume for storing media files
+    networks:
+      mreza:
+        ipv4_address: 172.19.0.4
+  web3:
+    build: .
+    command: python manage.py runserver --insecure 172.19.0.6:80
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - .:/app
+      - ./static:/app/static  # Mount a volume for storing media files
+      - ./media:/app/media:rw  # Mount a volume for storing media files
+    networks:
+      mreza:
+        ipv4_address: 172.19.0.6
+
+  loadBalancer:
+    image: nginx
     ports:
-      - "80:80"
-    depends_on:
-      - web1
-      - web2
+      - "8080:80"
+    volumes:
+      - ./conf:/etc/nginx/conf.d:ro
+    networks:
+      mreza:
+        ipv4_address: 172.19.0.5
+networks:
+  mreza:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.19.0.0/16
 

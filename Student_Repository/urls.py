@@ -19,16 +19,18 @@ from django.urls import include, path, re_path
 from student_files.views import StudentFileViewSet
 from django.conf import settings
 from django.conf.urls.static import static
-from django.contrib.auth.views import LoginView, LogoutView
+from . import settings
+from student_files.forms import put_data, list_data
 
 urlpatterns = [
     path("", admin.site.urls),
-    path("admin/", admin.site.urls),
-   
+    path('add/', put_data, name='put_data'),
+    path('list/', list_data, name='list_data'),
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-else:
-    urlpatterns += static(settings.ALLOWED_HOSTS, document_root=settings.ALLOWED_HOSTS)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+#urlpatterns += static(settings.ALLOWED_HOSTS, document_root=settings.ALLOWED_HOSTS)
+
+
 
 

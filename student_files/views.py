@@ -16,3 +16,4 @@ class  StudentFileViewSet(viewsets.ModelViewSet):
             response = response.FileResponse(file, content_type='application/text')
             response['Content-Disposition'] = 'attachment; filename="{}"'.format(student_file.file.name)
             return response
+            

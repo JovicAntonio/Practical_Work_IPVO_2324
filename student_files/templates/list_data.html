@@ -1,0 +1,17 @@
+<!-- list_data.html -->
+
+<form method="get" action="{% url 'list_data' %}" class="filter-form">
+    <label for="filter_name">Filter by Name:</label>
+    <input type="text" name="name" id="filter_name" value="{{ request.GET.name }}">
+    <button type="submit">Filter</button>
+</form>
+
+<ul>
+    {% for data in filtered_data %}
+        <li>
+            {{ data.name }} - {{ data.description }} - 
+            File: <a href="{{ data.file.url }}" target="_blank">{{ data.file.name }}</a> - 
+            Date: {{ data.date }}
+        </li>
+    {% endfor %}
+</ul>

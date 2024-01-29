@@ -1,0 +1,7 @@
+<!-- add_data.html -->
+
+<form method="post" action="{% url 'put_data' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save data</button>
+</form>

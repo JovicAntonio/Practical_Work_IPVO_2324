@@ -1,9 +1,22 @@
 from django.db import models
-
+import os
 # Create your models here.
 class StudentFile (models.Model):
-    title = models.CharField(max_length=100)
-    file = models.FileField(upload_to="student_files/files/")
+    CHOICES = [
+        ('dipl.', 'Diplomski rad'),
+        ('mag.', 'Magistarski rad'),
+        ('dr.', 'Doktorski rad'),
+    ]
 
-    def __str__(self):
-        return self.title
+
+    title = models.CharField(max_length=100,null=True)
+    file = models.FileField(upload_to="upload/")
+    studentFirstName = models.CharField(max_length=50,null=True)
+    studentLastName = models.CharField(max_length=50,null=True)
+    thesisDefenseDate = models.DateField(null=True)
+    thesisType = models.CharField(max_length=30, null=True, choices=CHOICES)
+    thesisDefensePlace = models.CharField(max_length=100,null=True)
+    wordCount = models.IntegerField(null=True)
+    fileSize = models.IntegerField(null=True, blank=True)
+
+
