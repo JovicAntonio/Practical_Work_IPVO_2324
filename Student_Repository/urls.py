@@ -16,16 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path, re_path
+from student_files import views
 from student_files.views import StudentFileViewSet
 from django.conf import settings
 from django.conf.urls.static import static
 from . import settings
-from student_files.forms import put_data, list_data
+from django.views.generic.base import RedirectView
+from django.urls import path, reverse_lazy
 
 urlpatterns = [
-    path("", admin.site.urls),
-    path('add/', put_data, name='put_data'),
-    path('list/', list_data, name='list_data'),
+    path('', RedirectView.as_view(url=reverse_lazy('admin:index'))),
+    path("admin/", admin.site.urls),
+    path("add/", views.put_data, name="put_data"),
+    path("list_data/", views.list_data, name="list_data"),
+
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

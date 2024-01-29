@@ -24,13 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h(e1)f0-iy26ur@1#^o9u)fk90@0uc+%4n1vbzt=qf8#qareu0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '*'
 ]
 
-MEDIA_URL = 'student_files/studentfile/media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = '/app/media/'
 
 

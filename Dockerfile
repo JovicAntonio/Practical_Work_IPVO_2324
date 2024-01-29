@@ -7,12 +7,10 @@ ENV PYTHONUNBUFFERED 1
 
 # Set the working directory in the container
 WORKDIR /app
-
+COPY . /app/
 # Copy the dependencies file to the working directory
 COPY requirements.txt /app/
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy the content of the local src directory to the working directory
-COPY . /app/
