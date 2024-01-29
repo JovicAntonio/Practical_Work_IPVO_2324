@@ -25,7 +25,7 @@ from django.views.generic.base import RedirectView
 from django.urls import path, reverse_lazy
 
 urlpatterns = [
-    path('', RedirectView.as_view(url=reverse_lazy('admin:index'))),
+    path('', RedirectView.as_view(url='list_data/')),
     path("admin/", admin.site.urls),
     path("add/", views.put_data, name="put_data"),
     path("list_data/", views.list_data, name="list_data"),

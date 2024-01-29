@@ -1,17 +1,105 @@
-<!-- list_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <style>
+        .font {
+            font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+        }
 
-<form method="get" action="{% url 'list_data' %}" class="filter-form">
-    <label for="filter_name">Filter by Title:</label>
-    <input type="text" name="title" id="filter_name" value="{{ request.GET.title }}">
-    <button type="submit">Filter</button>
-</form>
+        .navbar {
+            background-color: #264b5d;
+            overflow: hidden;
+        }
 
-<ul>
-    {% for data in filtered_data %}
-        <li>
-            {{ data.title }} - {{ data.studentFirstName }} {{ data.studentLastName }}: 
-            File: <a href="{{ data.file.url }}" target="_blank">{{ data.file.name }}</a> - 
-            Date: {{ data.thesisDefenseDate }}
-        </li>
-    {% endfor %}
-</ul>
+        .navbar a {
+            float: left;
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar a.right {
+            float: right;
+        }
+        .content {
+            padding: 20px;
+        }
+
+        .pagination {
+            margin-top: 10px;
+        }
+
+        .button {
+            float: right;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'admin:index' %}" class="button font">Go to Admin Page</a>
+    </div>
+    <center>
+    <h2 class="font">Filter Data</h2>
+    </center>
+    <center>
+    <form class="font" method="post" action="{% url 'list_data' %}">
+        {% csrf_token %}
+        <label for="filter_type">Filter by:</label>
+        <select name="filter_type">
+            {% for option in filter_options %}
+                <option value="{{ option.value }}">{{ option.display }}</option>
+            {% endfor %}
+        </select>
+        <label for="filter_value">Value:</label>
+        <input type="text" name="filter_value">
+        <button type="submit">Filter</button>
+    </form>
+    </center>
+    <center style="padding: 10px;" class="font">
+    <table border="2">
+        <tr style="margin-left: 5px; margin-bottom: 4px;">
+            <th>Title</th>
+            <th>File</th>
+            <th>Student First Name</th>
+            <th>Student Last Name</th>
+            <th>Defense Date</th>
+            <th>Thesis Type</th>
+            <th>Thesis Defense Place</th>
+            <th>Word Count</th>
+            <th>File Size</th>
+        </tr>
+        {% for student_file in queryset %}
+            <tr style="margin-left: 5px; margin-bottom: 4px;">
+                <td class="font">{{ student_file.title }}</td>
+                <td class="font"><a href="{{ student_file.file.url }}" target="_blank">{{ student_file.file }}</a></td>
+                <td class="font">{{ student_file.studentFirstName }}</td>
+                <td class="font">{{ student_file.studentLastName }}</td>
+                <td class="font">{{ student_file.thesisDefenseDate }}</td>
+                <td class="font">{{ student_file.thesisType }}</td>
+                <td class="font">{{ student_file.thesisDefensePlace }}</td>
+                <td class="font">{{ student_file.wordCount }}</td>
+                <td class="font">{{ student_file.fileSize }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>
