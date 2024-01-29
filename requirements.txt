@@ -3,3 +3,4 @@ Django==4.2.9
 psycopg2-binary==2.9.9
 whitenoise==5.0.1
 gunicorn==20.0.4
+python-crontab==3.0.0 

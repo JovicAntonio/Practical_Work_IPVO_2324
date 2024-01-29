@@ -6,7 +6,7 @@ services:
     command: python manage.py runserver --insecure 172.19.0.3:80
     volumes:
       - .:/app
-      - ./static:/app/static  # Mount a volume for storing media files
+      - ./static:/app/static  # Mount a volume for storing static files
       - ./media:/app/media:rw # Mount a volume for storing media files
     networks:
       mreza:
@@ -17,7 +17,7 @@ services:
     command: python manage.py runserver --insecure 172.19.0.4:80
     volumes:
       - .:/app
-      - ./static:/app/static  # Mount a volume for storing media files
+      - ./static:/app/static  # Mount a volume for storing static files
       - ./media:/app/media:rw  # Mount a volume for storing media files
     networks:
       mreza:
@@ -27,7 +27,7 @@ services:
     command: python manage.py runserver --insecure 172.19.0.6:80
     volumes:
       - .:/app
-      - ./static:/app/static  # Mount a volume for storing media files
+      - ./static:/app/static  # Mount a volume for storing static files
       - ./media:/app/media:rw  # Mount a volume for storing media files
     networks:
       mreza:
@@ -42,6 +42,31 @@ services:
     networks:
       mreza:
         ipv4_address: 172.19.0.5
+
+#  postgres:
+#    image: postgres:latest
+#    environment:
+#      POSTGRES_DB: pgdb
+#      POSTGRES_USER: postgres_user
+#      POSTGRES_PASSWORD: postgres_password
+#      PG_HOST: postgres
+#      PG_PORT: 5432
+#    volumes:
+#      - ./postgres_data:/var/lib/postgresql/data
+
+#  replication:
+#    build: .
+#    depends_on:
+#      - postgres
+#    volumes:
+#      - ./data:/app/data 
+#    environment:
+#      - PG_DB=pgdb
+#      - PG_USER=postgres_user
+#      - PG_PASSWORD=postgres_password
+#      - PG_HOST=postgres
+#      - PG_PORT=5432
+    
 networks:
   mreza:
     driver: bridge
@@ -49,4 +74,3 @@ networks:
       driver: default
       config:
         - subnet: 172.19.0.0/16
-
