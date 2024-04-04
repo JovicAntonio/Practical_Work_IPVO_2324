@@ -12,79 +12,49 @@ ili cak i:
 pip install djangorestframework
 ```
 
-## Pristupni podaci na admina
-
-username: antonio/igor
-
-password: jova1234/iggy1234
-
-ili ako korisnik želi, može sam napraviti usera na bazi sa:
-
-```sh
-python manage.py createsuperuser
-```
-
-U tom slučaju, potrebno je u settings.py promjeniti:
+## Pristupni podaci na pgadmin
 
 ```py
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/app/db.sqlite3',
+PGADMIN_DEFAULT_EMAIL: pgadmin@gmail.com
+PGADMIN_DEFAULT_PASSWORD: pgAdmin_Pa55w0rd
+```
+
+## Pristupni podaci za spajanje na postgres server u pgadminu
+
+```py
+DATABASES = {    
+   "default": {        
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "postgres",
+        "USER": "postgres",
+        "PASSWORD": "postgres",
+        "HOST": "postgres",
+        "PORT": 5432,
     }
 }
 ```
 
-na:
+## Migracije izmjena u Django-u na postgres
 
-```py
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-```
-
-Ovom promjenom omogućeno je lokalno povezivanje na bazu u svrhu dodavanja korisnika. Nakon dodavanja, potrebno je vratiti na prethodnu verziju.
-
-## Replikacija podataka
-
-Potrebno je otkomentirati u `docker-compose`-u ovaj dio:
-
-```yml
-  postgres:
-    image: postgres:latest
-    environment:
-      POSTGRES_DB: pgdb
-      POSTGRES_USER: postgres_user
-      POSTGRES_PASSWORD: postgres_password
-      PG_HOST: postgres
-      PG_PORT: 5432
-    volumes:
-      - ./postgres_data:/var/lib/postgresql/data
-  replication:
-    build: .
-    depends_on:
-      - postgres
-    volumes:
-      - ./data:/app/data 
-    environment:
-      - PG_DB=pgdb
-      - PG_USER=postgres_user
-      - PG_PASSWORD=postgres_password
-      - PG_HOST=postgres
-      - PG_PORT=5432
-```
-
-Po potrebi, ako `docker-compose` ne radi i javlja da je pristup odbijen zbog postgres-a, nakon što se drugi put "zavrti" `docker-compose` potrebno je pokrenuti naredbu ili otkomentirati u Dockerfile-u:
+Prvo je potrebno, prije nego je i jedan servis dignut preko Docker-a, pokrenuti naredbu:
 
 ```sh
-sudo chmod 777 -R postgres_data/
+python manage.py makemigrations
 ```
 
-Njom se dodjeljuju najveća prava za sve datoteke potrebne za postgres.
+Nakon pokretanja Docker-a i uspješnog dizanja baze, potrebno je pokrenuti sljedeću naredbu kako bi promjene bile prihvaćene prenesle se na bazu:
 
-## Dohavacanje datoteka
+```sh
+docker-compose exec web python manage.py migrate
+```
 
-Na API-ju [http://172.19.0.3/media/upload/11_-_Stream_Processing.pdf](http://172.19.0.3/media/upload/11_-_Stream_Processing.pdf) se za primjer može vidjeti neki od PDF-ova u bazi. Zadnja vrijednost IP adrese se može izmjeniti sa 4 ili 6 obzirom da je osposobljen load balancer.
+## Dizanje servisa nakon prvog postavljanja
+
+Nakon prvog postavljanja, postgres i pgadmin promijene dopuštenja na svim datotekama u postgres_data i pgadmin_data mapama pa `docker-compose` ne može dignuti servise zbog čega javi error. Prije `docker-compose`-a potrebno je pokrenuti naredbe:
+
+```sh
+sudo chown -R 1000:1000 ./pgadmin_data/ 
+sudo chown -R 1000:1000 ./postgres_data/
+```
+
+Nakon toga servisi se normalno dižu.

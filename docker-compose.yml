@@ -1,4 +1,4 @@
-version: '3'
+version: '4'
 
 services:
   web1:
@@ -11,7 +11,8 @@ services:
     networks:
       mreza:
         ipv4_address: 172.19.0.3
-
+    depends_on:
+      - postgres
   web2:
     build: .
     command: python manage.py runserver --insecure 172.19.0.4:80
@@ -22,6 +23,8 @@ services:
     networks:
       mreza:
         ipv4_address: 172.19.0.4
+    depends_on:
+      - postgres
   web3:
     build: .
     command: python manage.py runserver --insecure 172.19.0.6:80
@@ -32,6 +35,8 @@ services:
     networks:
       mreza:
         ipv4_address: 172.19.0.6
+    depends_on:
+      - postgres
 
   loadBalancer:
     image: nginx
@@ -42,31 +47,38 @@ services:
     networks:
       mreza:
         ipv4_address: 172.19.0.5
+    depends_on:
+      - postgres
 
-#  postgres:
-#    image: postgres:latest
-#    environment:
-#      POSTGRES_DB: pgdb
-#      POSTGRES_USER: postgres_user
-#      POSTGRES_PASSWORD: postgres_password
-#      PG_HOST: postgres
-#      PG_PORT: 5432
-#    volumes:
-#      - ./postgres_data:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    ports:
+      - "8888:80"
+    user: root
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: pgAdmin_Pa55w0rd
+    volumes:
+      - ./pgadmin_data:/app/pgadmin
+    networks:
+      mreza:
+        ipv4_address: 172.19.0.7
+    depends_on:
+      - postgres
 
-#  replication:
-#    build: .
-#    depends_on:
-#      - postgres
-#    volumes:
-#      - ./data:/app/data 
-#    environment:
-#      - PG_DB=pgdb
-#      - PG_USER=postgres_user
-#      - PG_PASSWORD=postgres_password
-#      - PG_HOST=postgres
-#      - PG_PORT=5432
-    
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: postgres
+    user: root
+    volumes:
+      - ./postgres_data:/app/postgresql/data
+    networks:
+      mreza:
+        ipv4_address: 172.19.0.8
+
 networks:
   mreza:
     driver: bridge
