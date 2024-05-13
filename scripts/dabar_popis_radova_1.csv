@@ -1,138 +1,121 @@
-﻿pid,type,title,authors,mentors,source_title,published_date,url,doi,isbn,issn,eissn
-fsb:7020,thesis,"Cost and benefits of shifting towards low temperature district heating","Kirasić, Edi","Pukšec, Tomislav",,2021-05-14,https://urn.nsk.hr/urn:nbn:hr:235:225497,,,,
-fsb:4728,thesis,"Model motora s unutarnjim izgaranjem za ispitnu stanicu","Mustać, Jurica","Kozarac, Darko",,2018-12-06,https://urn.nsk.hr/urn:nbn:hr:235:531126,,,,
-fsb:4727,thesis,"Sinteza i simulacija strategije upravljanja umjereno-hibridiziranim vozilom paralelne arhitekture P2","Miletić, Marin","Deur, Joško",,2018-12-06,https://urn.nsk.hr/urn:nbn:hr:235:072264,,,,
-fsb:5083,thesis,"Analiza pozdanosti uređaja za servisnu inspekciju vanjskog zavara vakuumske posude","Delaš, Josipa","Škec, Stanko",,2019-07-11,https://urn.nsk.hr/urn:nbn:hr:235:548636,,,,
-riteh:4299,thesis,"Predator-prey simulation using neuroevolution for agent development","Vargić, Anamaria","Mauša, Goran",,2023-11-21,https://urn.nsk.hr/urn:nbn:hr:190:822305,,,,
-fpz:2991,thesis,"Optimizacija odvijanja postojećih prometnih tokova na raskrižju magistralni put M17 - magistralni put M17.3 u gradu Mostaru","Drljo, Ana","Luburić, Grgo",,2023-07-04,https://urn.nsk.hr/urn:nbn:hr:119:117326,,,,
-fkit:239,thesis,"The role of acetic acid in degradation of polymers for photovoltaic modules","Mihaljević, Antonia","Govorčin Bajsić, Emi",,2015-09-25,https://urn.nsk.hr/urn:nbn:hr:149:493437,,,,
-etfos:4534,thesis,"Upravljački sustav za autonomne robote s bežičnom i CAN komunikacijom","Shukla, Adamya","Job, Josip",,2023-09-26,https://urn.nsk.hr/urn:nbn:hr:200:520878,,,,
-fsb:6658,thesis,"Aerodynamic coefficients estimation of a general aviation airplane from flight test data","Haber-Zelanto, David","Vrdoljak, Milan",,2021-01-21,https://urn.nsk.hr/urn:nbn:hr:235:623552,,,,
-fsb:5102,thesis,"Numerička simulacija strujanja i prijelaza topline sustava hlađenja motora kamiona Ford Otosan","Iličić, Dominik","Jasak, Hrvoje",,2019-07,https://urn.nsk.hr/urn:nbn:hr:235:802850,,,,
-fsb:6487,thesis,"Bayesian Networks in Lane Change Maneuver Prediction","Grabić, Ivan","Ćurković, Petar",,2020-12-04,https://urn.nsk.hr/urn:nbn:hr:235:829533,,,,
-fsb:9791,thesis,"Application of imitation learning in human-robot interactions","Knežević, Tara","Šuligoj, Filip; ",,2023-12-07,https://urn.nsk.hr/urn:nbn:hr:235:151455,,,,
-rgn:2428,thesis,"Optimal conditions for CO2 permanent storage in a producing gas reservoir","Kružić, Valentina","Vulin, Domagoj; ",,2023-12-15,https://urn.nsk.hr/urn:nbn:hr:169:500552,,,,
-rgn:2185,thesis,"Overview of hydrogen production by methane pyrolysis process and possible applications of the solid carbon products","Kesić, Sara","Novak Mavar, Karolina; ",,2022-12-16,https://urn.nsk.hr/urn:nbn:hr:169:023370,,,,
-fsb:6668,thesis,"Blue energy potential assessment and their impact on the electricity system of the Republic of Croatia","Leopoldović, Lea","Duić, Neven; ",,2021-01-22,https://urn.nsk.hr/urn:nbn:hr:235:743065,,,,
-fsb:4641,thesis,"Validacija metode uronjene granične površine u numeričkoj mehanici fluida","Anderluh, Robert","Jasak, Hrvoje",,2019-03-29,https://urn.nsk.hr/urn:nbn:hr:235:245172,,,,
-fkit:333,thesis,"Preparation of bioactive composite material for bone tissue repair","Šandrk, Nikolina","Ivanković, Marica",,2016-09-30,https://urn.nsk.hr/urn:nbn:hr:149:587254,,,,
-fsb:2891,thesis,"Razvoj rješenja za rukovanje i oblikovanje žičanih snopova","Močibov, Petra","Bojčetić, Nenad",,2015-05-22,https://urn.nsk.hr/urn:nbn:hr:235:342475,,,,
-fkit:1712,thesis,"Implementation of the BAT concept in the cement industry","Babić, Ivana","Barbir, Damir",,2022-09-26,https://urn.nsk.hr/urn:nbn:hr:149:577357,,,,
-fsb:3800,thesis,"Digitalizacija Volkswagen sustava proizvodnje","Šarić-Ormuž, Ira","Štefanić, Nedeljko",,2017-03-30,https://urn.nsk.hr/urn:nbn:hr:235:940353,,,,
-rgn:1089,thesis,"Biological water treatment - simultaneous removal of thiosalts and nitrogen compounds","Srebreniković, Tarik","Grbeš, Anamarija",,2020-02-20,https://urn.nsk.hr/urn:nbn:hr:169:785809,,,,
-fpz:141,thesis,"Measures for Improving Fuel Efficiency by Implementing Electric Taxi System","Švragulja, Dino","Domitrović, Anita",,2015-09-24,https://urn.nsk.hr/urn:nbn:hr:119:697744,,,,
-fsb:4656,thesis,"Numerička analiza točkastih zavara u tankostijenim konstrukcijama izloženim mehaničkom šoku i vibracijskim opterećenjima","Vrgoč, Ana","Tonković, Zdenko",,2019-03-29,https://urn.nsk.hr/urn:nbn:hr:235:426661,,,,
-rgn:2086,thesis,"Basic properties of the dimension stone used in the construction of the Zagreb Cathedral","Katalinić, Franjo","Maričić, Ana; ; ",,2022-07-15,https://urn.nsk.hr/urn:nbn:hr:169:560912,,,,
-fkit:319,thesis,"Chemical characterization of freshwater sediments in central Italy: a tool to discriminate between anthropogenic pollution and natural geogenic sources","Damianić, Bernarda","Lončarić Božić, Ana",,2016-09-29,https://urn.nsk.hr/urn:nbn:hr:149:645254,,,,
-rgn:2244,thesis,"Multiphase flow with CO2 as the displacing phase: digital rock, laboratory, and upscaled analysis","Sušilović, Nikolina","Vulin, Domagoj; ",,2023-02-24,https://urn.nsk.hr/urn:nbn:hr:169:108638,,,,
-pfri:3349,thesis,"Risk Assessment of the Extraordinary Pollution in the Adriatic Sea as an Economically Important Area for the Republic of Croatia","Malnar, Teo","Šabalja, Đani",,2022-11-28,https://urn.nsk.hr/urn:nbn:hr:187:057771,,,,
-fsb:4988,thesis,"Ocjena radnog opterećenja pilota helikoptera za scenarij slijetanja na brodsku platformu","Gašparac, Tibor","Vrdoljak, Milan",,2019-05-15,https://urn.nsk.hr/urn:nbn:hr:235:444155,,,,
-fsb:4253,thesis,"Eksperimentalni model prirodne ventilacije zgrade u urbanoj sredini","Golubić, Dino","Kozmar, Hrvoje",,2018-03-28,https://urn.nsk.hr/urn:nbn:hr:235:996809,,,,
-rgn:908,thesis,"New simplistic approach for MEOR modelling and uncertainty assesment","Vuković, Tomislav","Vulin, Domagoj",,2019-07-08,https://urn.nsk.hr/urn:nbn:hr:169:162432,,,,
-pfri:2393,thesis,"Centrifugal separator diagnosis","Arnaut, Alen","Kralj, Predrag; ",,2021-10-08,https://urn.nsk.hr/urn:nbn:hr:187:957645,,,,
-fsb:2707,thesis,"Ispitivanje uređaja za smanjenje aerodinamičkog otpora cestovnih vozila","Puljić, Damjan","Lulić, Zoran; Šoda, Ante",,2014-12-05,https://urn.nsk.hr/urn:nbn:hr:235:406756,,,,
-pfri:1909,thesis,"Integrated coastal zone management in Republic of Croatia with a reference to Marina Vrsar","Sardelin, Anton","Debelić, Borna",,2020-09-17,https://urn.nsk.hr/urn:nbn:hr:187:801598,,,,
-riteh:3504,thesis,"Uređaji za smanjenje struja kratkog spoja u prijenosnim mrežama","Mioč, Ante","Franković, Dubravko; ",,2022-11-17,https://urn.nsk.hr/urn:nbn:hr:190:758821,,,,
-rgn:978,thesis,"Integration of big data analysis and engineering advanced analytics to intelligently manage and control completion and artifical lift for selected well in Croatia","Miličević, Monika","Pašić, Borivoje; Soleša, Mišo",,2019-09-23,https://urn.nsk.hr/urn:nbn:hr:169:056127,,,,
-fsb:3345,thesis,"Napredna metoda energijske analize za optimalno rješenje pri obnovi zgrada","Stjelja, Davor","Balen, Igor",,2016-03-25,https://urn.nsk.hr/urn:nbn:hr:235:145344,,,,
-fsb:7147,thesis,"Design and simulation of a vertical dynamics control system within an advanced simulation environment","Berljavac, Paolo","Deur, Joško",,2021-07-16,https://urn.nsk.hr/urn:nbn:hr:235:078784,,,,
-pfri:1952,thesis,"Autonomous vehicles","Perman, Luka","Tijan, Edvard; ",,2020-09-24,https://urn.nsk.hr/urn:nbn:hr:187:582793,,,,
-fsb:2519,thesis,"Analiza podmornice Typhoon klase","Šabalja, Tomislav","Slapničar, Vedran",,2014-07-17,https://urn.nsk.hr/urn:nbn:hr:235:938838,,,,
-fsb:7439,thesis,"Development of the software for a Formula Student vehicle suspension optimal hardpoints positions determination","Mraz, Bruno","Prebeg, Pero",,2021-12-17,https://urn.nsk.hr/urn:nbn:hr:235:414305,,,,
-fpz:1716,thesis,"Optimization of railway traffic using software solution","Leko, Marko","Abramović, Borna; Pachl, Jörn",,2019-09-23,https://urn.nsk.hr/urn:nbn:hr:119:538695,,,,
-rgn:305,thesis,"Paper recycling","Kalinić, Mate Juraj","Bedeković, Gordan",,2016-02-19,https://urn.nsk.hr/urn:nbn:hr:169:523621,,,,
-fsb:5785,thesis,"Validacija modela turbulencije pri tranziciji iz laminarnog u turbulentno strujanje","Kovačić, Luka","Jasak, Hrvoje",,2020-04-10,https://urn.nsk.hr/urn:nbn:hr:235:676819,,,,
-fsb:3422,thesis,"Studija modela interakcije rotora i statora kod numeričkog određivanja performansi centrifugalnih pumpi","Horvat, Marko","Jasak, Hrvoje",,2016-07-15,https://urn.nsk.hr/urn:nbn:hr:235:371213,,,,
-fsb:3289,thesis,"Analiza proizvodnje u tvornici kabela","Temelini, Giulia","Kunica, Zoran",,2016-02-10,https://urn.nsk.hr/urn:nbn:hr:235:527189,,,,
-fsb:3819,thesis,"Numerička simulacija strujanja u višestupanjskom aksijalnom kompresoru","Bartolec, Bruno","Jasak, Hrvoje",,2017-05-19,https://urn.nsk.hr/urn:nbn:hr:235:533577,,,,
-fsb:6680,thesis,"Analysis of the break assignment problem in emergency fleets considering area coverage","Novak, Dora","Cajner, Hrvoje; ",,2021-01-21,https://urn.nsk.hr/urn:nbn:hr:235:904173,,,,
-fpz:1563,thesis,"Analysis of Tram Systems and Their Implementation in Wiesbaden","Sikirić, Matija","Slavulj, Marko; Bruns, André",,2018-06-28,https://urn.nsk.hr/urn:nbn:hr:119:315896,,,,
-fkit:1726,thesis,"Copper-doped ceria catalytic activity for soot oxidation process","Musakana, Fadzai Praise","Kurajica, Stanislav",,2022-09-20,https://urn.nsk.hr/urn:nbn:hr:149:102746,,,,
-rgn:1382,thesis,"Potential of the hydraulic concentric tubular pumping system","Curiš, Sven","Langbauer, Clemens; Karasalihović-Sedlar, Daria",,2020-09-22,https://urn.nsk.hr/urn:nbn:hr:169:076955,,,,
-fsb:7432,thesis,"Fatigue analysis of seam welds in lightweight aluminum structures","Vukić, Mislav","Tonković, Zdenko",,2021-12-17,https://urn.nsk.hr/urn:nbn:hr:235:072463,,,,
-rgn:2235,thesis,"INOPIA model for drought forecast and its consequences on water resources – example of the City of Foligno in Italy","Martinić, Nina","Nakić, Zoran; ",,2023,https://urn.nsk.hr/urn:nbn:hr:169:551372,,,,
-etfos:3005,thesis,iDeliver,"Pavlović, Zvonimir","Lukić, Ivica",,2021-07-21,https://urn.nsk.hr/urn:nbn:hr:200:172413,,,,
-fsb:6643,thesis,"Calibration and validation of a damage model for 6005-T6 aluminium","Stanić, Matej","Tonković, Zdenko",,2021-01-22,https://urn.nsk.hr/urn:nbn:hr:235:861951,,,,
-pmfst:1484,thesis,"Numerical and machine learning methods in automatic text summarization","Sokol, Domina","Mladenović, Saša",,2022-09-23,https://urn.nsk.hr/urn:nbn:hr:166:511169,,,,
-pfri:1853,thesis,"Modelling and simulation of the operation of diesel generators on offshore drilling rigs by using the Python programming language","Čemeljić, Hrvoje","Ogrizović, Dario",,2020-07-02,https://urn.nsk.hr/urn:nbn:hr:187:480241,,,,
-rgn:151,thesis,"Directionall well design using Paradigm Sysdrill simulator","Japundžić, Silvio","Krištafor, Zdenko",,2015-12-18,https://urn.nsk.hr/urn:nbn:hr:169:125811,,,,
-fsb:5001,thesis,"Analiza strujanja i prijelaza topline u odjeljku motora lakog zrakoplova korištenjem numeričke mehanike fluida","Zrnić, Dino","Jasak, Hrvoje",,2018-01-25,https://urn.nsk.hr/urn:nbn:hr:235:767178,,,,
-fsb:3364,thesis,"Izrada nelinearnog frekvencijski ovisnog modela dinamičke krutosti nosača motora","Kovarik, Borna","Kozarac, Darko",,2016-05-12,https://urn.nsk.hr/urn:nbn:hr:235:327651,,,,
-fpz:644,thesis,"Reverse Logistics Warehouse Process Optimization","Klongsungsorn, Panudda","Bajor, Ivona",,2016-09-27,https://urn.nsk.hr/urn:nbn:hr:119:152756,,,,
-pfri:2840,thesis,"The importance of the port of Rijeka within the Pan-European corridor V","Bogović, Lorena","Tijan, Edvard",,2022-07-19,https://urn.nsk.hr/urn:nbn:hr:187:565758,,,,
-gradst:725,thesis,"Analiza nosivosti čeličnog stupa izloženog lokaliziranom požaru","Faldić, Tonko","Torić, Neno",,2017-09-21,https://urn.nsk.hr/urn:nbn:hr:123:464209,,,,
-fsb:4954,thesis,"Numerička simulacija procesa spreja i izgaranja u komori za izgaranje mlaznog motora","Cerinski, Damijan","Vujanović, Milan",,2017-07-19,https://urn.nsk.hr/urn:nbn:hr:235:916716,,,,
-gradri:1666,thesis,"Modeliranje i analiza višekatnog stambenog objekta primjenom BIM-a","Lenart, Filip","Torić Malić, Neira",,2023-09-27,https://urn.nsk.hr/urn:nbn:hr:157:603029,,,,
-fkit:584,thesis,"Feasibility of double electrochemical flow cell for high current density conversion of heat to electricity","Plazanić, Marko","Mandić, Zoran",,2017-09-27,https://urn.nsk.hr/urn:nbn:hr:149:687784,,,,
-fsb:4031,thesis,"Validacija sprege gibanja krutog tijela i računalne dinamike fluida u frekvencijskoj domeni","Volarić, Filip","Jasak, Hrvoje",,2017-12-08,https://urn.nsk.hr/urn:nbn:hr:235:234447,,,,
-fsb:3802,thesis,"Numerički proračun performansi rotora NASA 67","Žužul, Josip","Jasak, Hrvoje",,2017-03-31,https://urn.nsk.hr/urn:nbn:hr:235:942499,,,,
-fsb:5934,thesis,"Izrada simulacijskog modela motora sa unutarnjim izgaranjem sa asinkronim starter motorom-generatorom u hibridnom električnom vozilu","Plavac, Filip","Pavković, Danijel",,2020-05-14,https://urn.nsk.hr/urn:nbn:hr:235:979499,,,,
-etfos:2069,thesis,"Primjena neizrazitih sustava za inteligentnu obradu događaja pri određivanju primarnog kvara u prijenosnoj mreži","Krancpiler, Damir","Glavaš, Hrvoje; Petrović, Ivica",,2018-10-25,https://urn.nsk.hr/urn:nbn:hr:200:539798,,,,
-fsb:52,thesis,"Analiza preostale čvrstoće oštećene totalne proteze kuka","Babić, Milena","Božić, Željko",,2019-01-25,https://urn.nsk.hr/urn:nbn:hr:235:724874,,,,
-fsb:4768,thesis,"Modeliranje atmosferskog graničnog sloja u klimatskom zračnom tunelu","Ribičić, Matko","Kozmar, Hrvoje; Pospišil, Stanislav",,2015-12-04,https://urn.nsk.hr/urn:nbn:hr:235:977173,,,,
-pfri:2454,thesis,"Blockchain technology perspectives in martime industry","Marenković, Sven","Tijan, Edvard; ",,2021-10-11,https://urn.nsk.hr/urn:nbn:hr:187:389912,,,,
-fsb:7489,thesis,"Aerodynamic model development for general aviation aircraft based on flight test data","Đeverlija, Jan Juraj","Vrdoljak, Milan",,2021-12-16,https://urn.nsk.hr/urn:nbn:hr:235:592022,,,,
-etfos:2779,thesis,Histogram,"Tarakčija, Dinko","Job, Josip",,2020-09-28,https://urn.nsk.hr/urn:nbn:hr:200:337481,,,,
-fsb:6993,thesis,"CFD simulacija nenominalnih radnih točaka centrifugalnog kompresora","Čorak, Matej","Jasak, Hrvoje",,2021-03-24,https://urn.nsk.hr/urn:nbn:hr:235:516890,,,,
-fsb:3630,thesis,"Planiranje lokalnog energetskog sustava primjenom analize ""od dna prema gore""","Dobravec, Viktorija","Krajačić, Goran; Schrøder Pedersen, Allan",,2017-01-27,https://urn.nsk.hr/urn:nbn:hr:235:941253,,,,
-fpz:367,thesis,"Inteligent Traffic Control with Priority for Emergency Vehicles","Mlinarić, Mario","Vujić, Miroslav",,2016-05-03,https://urn.nsk.hr/urn:nbn:hr:119:879217,,,,
-fsb:3886,thesis,"Tehno-ekonomska analiza razvoja novog tipa brodskog motora niske razine buke i vibracija","Tudor, Hana","Vladimir, Nikola",,2017-07-21,https://urn.nsk.hr/urn:nbn:hr:235:495581,,,,
-fpz:1638,thesis,"Factors of Performance and Safety of Road Vehicle Drivers in Urban Environment","Tokić, Sandro","Sumpor, Davor",,2019-07-15,https://urn.nsk.hr/urn:nbn:hr:119:215379,,,,
-fsb:4659,thesis,"Primjena Dispa-SET modela na analizu spone vodnih i elektroenergetskih sustava u zemljama Zapadnog Balkana i susjedstva","Stunjek, Goran","Krajačić, Goran",,2019-03-29,https://urn.nsk.hr/urn:nbn:hr:235:427234,,,,
-pmfst:1694,thesis,"Object tracking and detection with YOLOv8 and StrongSORT algorithms captured by drone","Farkaš, Luka","Mladenović, Saša",,2023-08-29,https://urn.nsk.hr/urn:nbn:hr:166:238937,,,,
-fsb:4968,thesis,"Numeričko modeliranje procesa izgaranja u komori za izgaranje mlaznog motora korištenjem kemijske kinetike i pristupa tabeliranih podataka propagacije plamena","Pađen, Ivan","Vujanović, Milan",,2018-03-28,https://urn.nsk.hr/urn:nbn:hr:235:615905,,,,
-fkit:1371,thesis,"DLP 3D printing of materials with heterogeneous material properties","Šebalj, Nikola","Vidović, Elvira",,2022-11-25,https://urn.nsk.hr/urn:nbn:hr:149:396680,,,,
-fpz:2256,thesis,"Modeling and Validation of BADA 4 Piston Aircraft Performance","Papoči, Petar","Krajček Nikolić, Karolina",,2020-09-24,https://urn.nsk.hr/urn:nbn:hr:119:944678,,,,
-fsb:3172,thesis,"Model reaplikacije za planiranje, razvoj i integraciju pametnih centraliziranih toplinskih sustava u pametne energetske sustave","Doračić, Borna","Vad Mathiesen, Brian; Krajačić, Goran",,2016-01-22,https://urn.nsk.hr/urn:nbn:hr:235:907413,,,,
-pfri:2498,thesis,"The presence and danger of microplastics in the oceans","Margeta, Amalija","Šabalja, Đani; ",,2021-09-27,https://urn.nsk.hr/urn:nbn:hr:187:788647,,,,
-fsb:2516,thesis,"Numeričke simulacije stlačivog strujanja fluida korištenjem spregnutog algoritma","Šunjo, Karlo","Jasak, Hrvoje",,2014-07-18,https://urn.nsk.hr/urn:nbn:hr:235:924169,,,,
-rgn:715,thesis,"Geophysical investigation in water rich mining area","Skenderija, Jelena","Orešković, Jasna",,2018-01-19,https://urn.nsk.hr/urn:nbn:hr:169:124305,,,,
-fsb:8230,thesis,"Effects of rheological models of blood on the flow through an idealised stenosed artery","Milanović, Matko","Tuković, Željko; ",,2022-07-21,https://urn.nsk.hr/urn:nbn:hr:235:121688,,,,
-fsb:8107,thesis,"Numerical Conjugate Heat Transfer Analysis of a Roots Blower","Matuzović, Mario","Tuković, Željko; ",,2022-05-13,https://urn.nsk.hr/urn:nbn:hr:235:315521,,,,
-fsb:3599,thesis,"Simulacija promjene opterećenja Francisove hidrauličke turbine","Živković, Dario","Tuković, Željko",,2016-12-09,https://urn.nsk.hr/urn:nbn:hr:235:013186,,,,
-fsb:2715,thesis,"Uloga dizalica topline velikih snaga u budućim energetskim sustavima","Dominković, Dominik Franjo","Vad Mathiesen, Brian; Krajačić, Goran",,2015-01-23,https://urn.nsk.hr/urn:nbn:hr:235:888180,,,,
-fpz:2052,thesis,"Development of Scenarios on the ESCAPE ATC Simulator","Antolović, Dorea","Juričić, Biljana",,2020-09-24,https://urn.nsk.hr/urn:nbn:hr:119:020042,,,,
-fsb:3372,thesis,"Planiranje razvoja proizvoda u automobilskoj industriji","Mandić, Marko","Marjanović, Dorian",,2016-05-20,https://urn.nsk.hr/urn:nbn:hr:235:956598,,,,
-fsb:3455,thesis,"Implementacija i validacija elektrolitskog modela dva potencijala u numeričkom modelu gorivnog članka","Bešenić, Tibor","Jasak, Hrvoje",,2016-07-15,https://urn.nsk.hr/urn:nbn:hr:235:200762,,,,
-fsb:5392,thesis,"Numerical modelling of combustion process using flamelet generated manifold and coherent flame combustion models","Stipić, Marija","Vujanović, Milan",,2019-12-06,https://urn.nsk.hr/urn:nbn:hr:235:851716,,,,
-fsb:5940,thesis,"Simulation analysis of an ABS control system for electric vehicles equipped with an electro-mechanical brake","Ritoša, Matija","Deur, Joško",,2020-05-15,https://urn.nsk.hr/urn:nbn:hr:235:795444,,,,
-etfos:1062,thesis,"DVB-T2 Simulink model","Lončarević, Domagoj","Herceg, Marijan",,2016-09-30,https://urn.nsk.hr/urn:nbn:hr:200:545496,,,,
-fpz:643,thesis,"Comparative Analysis of Reverse Logistics Activities and Incineration for Greening Waste Management","Stankeric, Oliver","Bajor, Ivona",,2016-09-27,https://urn.nsk.hr/urn:nbn:hr:119:070798,,,,
-fpz:187,thesis,"Postal parcels delivery phase optimization","Baltić, Igor","Kavran, Zvonko; Madleňák, Radovan",,2015-09-24,https://urn.nsk.hr/urn:nbn:hr:119:575387,,,,
-fsb:4981,thesis,"Numeričko modeliranje procesa ubrizgavanja i isparavanja goriva u uvjetima povišene temperature goriva i niskog tlaka komore izgaranja","Benković, Dajana","Vujanović, Milan",,2018-12-06,https://urn.nsk.hr/urn:nbn:hr:235:058232,,,,
-fsb:3803,thesis,"Numerička karakterizacija brodskog propelera","Šeb, Borna","Jasak, Hrvoje",,2017-03-31,https://urn.nsk.hr/urn:nbn:hr:235:498992,,,,
-fpz:2051,thesis,"Development of a Safety Performance Evaluation Process and Supporting Tool for Changes in ATM","Dobroslavić, Tea","Juričić, Biljana",,2020-09-24,https://urn.nsk.hr/urn:nbn:hr:119:021762,,,,
-fsb:2924,thesis,"Analiza i implementacija metode harmoničke ravnoteže u proračunskoj mehanici fluida","Cvijetić, Gregor","Jasak, Hrvoje",,2015-07-17,https://urn.nsk.hr/urn:nbn:hr:235:118181,,,,
-gradst:17,thesis,"Diskretna optimizacija ovješenih mostova","Đerek, Andrea","Harapin, Alen",,2015-09-04,https://urn.nsk.hr/urn:nbn:hr:123:880997,,,,
-fsb:9401,thesis,"Numerical analysis of adhesively bonded joints","Milohanić, Darian","Virag, Lana",,2023-07-21,https://urn.nsk.hr/urn:nbn:hr:235:700861,,,,
-rgn:1704,thesis,"Application for absolute permeability analysis based on digital rock sample","Trgovec-Greif, Martin","Vulin, Domagoj; ",,2021-07-16,https://urn.nsk.hr/urn:nbn:hr:169:239632,,,,
-fsb:4987,thesis,"Trodimenzionalna numerička simulacija procesa izgaranja u komori izgaranja mlaznog motora","Delić, Fran","Jasak, Hrvoje",,2019-03-29,https://urn.nsk.hr/urn:nbn:hr:235:409395,,,,
-riteh:3806,thesis,"Comparison of Traditional Compression Methods of Different Datasets for Cloud Storage Systems","Klen, Deni","Lerga, Jonatan",,2023-07-17,https://urn.nsk.hr/urn:nbn:hr:190:611761,,,,
-fsb:5957,thesis,"Numerical modelling of the preloaded bolted connections","Kalauz, Matija","Tonković, Zdenko",,2020-05-15,https://urn.nsk.hr/urn:nbn:hr:235:868819,,,,
-riteh:3885,thesis,"Interpretability of Machine Learning Models on Medical Tabular Data","Rubinić, Ivan","Štajduhar, Ivan",,2023,https://urn.nsk.hr/urn:nbn:hr:190:051791,,,,
-fsb:3410,thesis,"Ispitivanje i analiza značajki rada dvo-gorivnog motora","Blažić, Mislav","Kozarac, Darko",,2016-07-15,https://urn.nsk.hr/urn:nbn:hr:235:263290,,,,
-fsb:3798,thesis,"Razvoj mehatroničkih koncepata za haptičku dojavu sličnih pritisku gumba u kombinaciji s pokaznicima osjetljivima na dodir","Kljajić, Zorica","Pavković, Danijel",,2017-03-30,https://urn.nsk.hr/urn:nbn:hr:235:963271,,,,
-fpz:384,thesis,"Functional Efficiency Optimization of Intersection Donje Svetice and Planinska Street","Gurung, Arun","Pilko, Hrvoje",,2016-07-05,https://urn.nsk.hr/urn:nbn:hr:119:451299,,,,
-fsb:7019,thesis,"Numeričko modeliranje procesa izgaranja e-goriva polioksimetilen dimetil etera","Pečaver Šošić, Dominik","Vujanović, Milan",,2021-05-13,https://urn.nsk.hr/urn:nbn:hr:235:278663,,,,
-fsb:2521,thesis,"Model leta bespilotne letjelice konfiguracije letećeg krila","Andrić, Marijan","Vrdoljak, Milan",,2014-07-16,https://urn.nsk.hr/urn:nbn:hr:235:099098,,,,
-fsb:3641,thesis,"Razvoj automatiziranog procesa optimizacije profila turbinskih lopatica","Šojat, Borna","Jasak, Hrvoje",,2017-01-27,https://urn.nsk.hr/urn:nbn:hr:235:017268,,,,
-fpz:2308,thesis,"Aerodynamic Characteristics Estimation of Variable Geometry Airfoil in Supersonic Air Flow","Matak, Leo","Krajček Nikolić, Karolina",,2021-05-04,https://urn.nsk.hr/urn:nbn:hr:119:135218,,,,
-fsb:2520,thesis,"ROS programski paket za distribuirano upravljanje mrežama dinamičkih sustava","Rossi, Matija","Jokić, Andrej",,2014-07-17,https://urn.nsk.hr/urn:nbn:hr:235:281074,,,,
-fsb:3401,thesis,"Oblikovanje i 3D printanje implantata ""skela"" od trikalcij-fosfata","Kapo, Faruk","Jurčević Lulić, Tanja; Stampfl, Jürgen",,2016-07-15,https://urn.nsk.hr/urn:nbn:hr:235:879800,,,,
-fsb:2528,thesis,"Opetovana upotreba etalaona za provjeru penetrantskih sustava","Jantol, Sandra","Markučič, Damir",,2014-07-17,https://urn.nsk.hr/urn:nbn:hr:235:749910,,,,
-fsb:3290,thesis,"Analiza izvedivosti primjene tehnologije RFID u tvornici kabela","Capparelli, Paolo","Kunica, Zoran",,2016-02-10,https://urn.nsk.hr/urn:nbn:hr:235:447805,,,,
-fpz:2527,thesis,"Origin-Destination Flow and Traffic Parameter Estimation Based on Cellular Network Data and Vehicle Movement Historical Records","Mardešić, Nikola","Carić, Tonči; ",,2021-09-22,https://urn.nsk.hr/urn:nbn:hr:119:515723,,,,
-rgn:1940,thesis,"Geomechanical aspects of deepwater well planning around salt structures","Leš, Borna","Pašić, Borivoje; ",,2022-02-17,https://urn.nsk.hr/urn:nbn:hr:169:657411,,,,
-fsb:4668,thesis,"Smjernice za usporedbu i procjenu elemenata motora s unutarnjim izgaranjem u svrhu poboljšanja buke i vibracija","Vizir, Valentina","Kozarac, Darko",,2019-05-17,https://urn.nsk.hr/urn:nbn:hr:235:941622,,,,
-fsb:4894,thesis,"Valna opterećenja oštećenog broda","Mikulić, Antonio","Parunov, Joško",,2016-07-14,https://urn.nsk.hr/urn:nbn:hr:235:728434,,,,
-fsb:4667,thesis,"Simulacija buke u unutrašnjosti vozila uzrokovane vanjskim izvorom zvuka koristeći metodu konačnih elemenata (MKE)","Šimag, Martina","Alujević, Neven",,2019-05-17,https://urn.nsk.hr/urn:nbn:hr:235:638314,,,,
-fsb:2527,thesis,"Tehno-ekonomska analiza prometa na europskim unutarnjim plovnim putovima","Čakširan, Marko","Žiha, Kalman",,2014-07-17,https://urn.nsk.hr/urn:nbn:hr:235:999194,,,,
-fsb:4091,thesis,"Proračun opterećenja vjetra na plutajući pučinski objekt","Jovan, Ivica","Jasak, Hrvoje",,2018-01-24,https://urn.nsk.hr/urn:nbn:hr:235:496991,,,,
-rgn:1747,thesis,"Pore-morphology based simulations in porous media","Gredičak, Viktor","Perković, Luka; ",,2021-09-10,https://urn.nsk.hr/urn:nbn:hr:169:352800,,,,
-fsb:6098,thesis,"Diamond cutting tools wear behaviour analysed through diamond particles characterisation","Pisk, Matija","Matijević, Božidar; ",,2020-07-14,https://urn.nsk.hr/urn:nbn:hr:235:060364,,,,
-pmfst:1851,thesis,"Anomaly detection in AWS load balancer logs","Jankuleski, Marko","Ugrina, Ivo",,2023-10-30,https://urn.nsk.hr/urn:nbn:hr:166:998425,,,,
-fsb:3816,thesis,"Termomehanička numerička analiza ispušnog sustava motora","Šubat, Andrej","Tonković, Zdenko",,2017-05-19,https://urn.nsk.hr/urn:nbn:hr:235:481227,,,,
-fsb:3602,thesis,"Analiza stabilnosti konvolucijskih neuronskih mreža primjenjenih u klasifikaciji slika u svrhu detekcije neispravnosti proizvoda","Premec, Jasmina","Majetić, Dubravko",,2016-12-08,https://urn.nsk.hr/urn:nbn:hr:235:274963,,,,
-fsb:10071,thesis,"Validation of plasticity and damage model for aluminium 6014-T6","Primc, Davide","Lesičar, Tomislav",,2024-01-24,https://urn.nsk.hr/urn:nbn:hr:235:178659,,,,
-fsb:1356,thesis,"Fatigue strength of solder joint in electronic assemblies exposed to combined temperature and vibration cyclic loading","Ključar, Luka","Božić, Željko",,2012-01-27,https://urn.nsk.hr/urn:nbn:hr:235:431960,,,,
-fsb:8059,thesis,"Opterećenje vjetrom na visokim zgradama s poroznim dvostrukim pročeljima","Melnjak, Petar","Kozmar, Hrvoje; ",,2022-04-01,https://urn.nsk.hr/urn:nbn:hr:235:126568,,,,
+﻿pid;type;title;authors;mentors;source_title;published_date;url;doi;isbn;issn;eissn
+unizd:7735;thesis;Queer Deviance in New Queer Cinema;Ivanov, Antonia;Petkovic, Rajko;;29.9.2023;https://urn.nsk.hr/urn:nbn:hr:162:154148;;;;
+ffzg:1574;thesis;Untranslatability: Lexical and Culture Gaps;Cuculic, Petra;Nikolic, Kristijan;;4.7.2017;https://urn.nsk.hr/urn:nbn:hr:131:126457;;;;
+ffri:2890;thesis;A Translation of a Short Story from the Italian Language to the English Language and a Comparison with the Traslation from the Italian Language to the Croatian Language;Turk, Ena;Tutek, Nikola;;14.7.2021;https://urn.nsk.hr/urn:nbn:hr:186:693774;;;;
+unizd:7569;thesis;Gender-Related Differences in Language Use: The Case of the TV Series “How I Met Your Mother”, “The Big Bang Theory” and “New Girl”;Došen, Anela;Škific, Sanja;;27.9.2023;https://urn.nsk.hr/urn:nbn:hr:162:943061;;;;
+ffzg:817;thesis;The Ethical and Moral Implications of Poverty in Down and Out in Paris and London and Cwmardy;Grguric, Kristina;Domines Veliki, Martina;;1.9.2019;https://urn.nsk.hr/urn:nbn:hr:131:621795;;;;
+ffos:1073;thesis;Translating cultural capital from Croatian into English - Case study of 'Naš covjek na terenu' by Robert Perišic and its translation into English;Lovric, Marinela;Omazic, Marija;;22.12.2014;https://urn.nsk.hr/urn:nbn:hr:142:518681;;;;
+ffzg:2946;thesis;Motivation of Idioms in English and Russian Folk Tales;Ries, Hana;"Grubišic, Marina; ";;23.9.2020;https://urn.nsk.hr/urn:nbn:hr:131:185064;;;;
+ffos:1015;thesis;Teaching Toni Morrison's Beloved and The Bluest Eye: Employing the Theme/Motif of Community;Danko, Rebecca;"Oklopcic, Biljana; ";;28.9.2015;https://urn.nsk.hr/urn:nbn:hr:142:306561;;;;
+ffzg:3893;thesis;The European Union and the Dissolution of Yugoslavia;Vujnovic, Luka;Previšic, Martin;;25.2.2021;https://urn.nsk.hr/urn:nbn:hr:131:012596;;;;
+ffri:496;thesis;Climate Change and International Distributive Justice;Gašparic, Petra;Baccarini, Elvio;;30.9.2016;https://urn.nsk.hr/urn:nbn:hr:186:814123;;;;
+ffzg:2237;thesis;A sociolinguistic analysis of word formation in a lifestyle magazine;Gašparovic, Mia;Žic Fuchs, Milena;;5.7.2019;https://urn.nsk.hr/urn:nbn:hr:131:831191;;;;
+ffzg:7291;thesis;Translating Phraseological Units: A Contrastive Study of the Croatian Translations of Edgar Allan Poe's The Black Cat and The Murders in the Rue Morgue;Novko, Ida;Stanojevic, Mateusz-Milan;;19.1.2023;https://urn.nsk.hr/urn:nbn:hr:131:018782;;;;
+ffzg:5890;thesis;Automatization of Valency Frames Prediction Based on Verb Prefixation with NooJ;Bajac, Petra;"Bekavac, Božo; ";;23.3.2022;https://urn.nsk.hr/urn:nbn:hr:131:708196;;;;
+ffst:2958;thesis;Denaturalizing Artificial Intelligence in Ted Chiang's The Lifecycle of Software Objects;Grgurevic, Dario;Willems, Brian;;2021;https://urn.nsk.hr/urn:nbn:hr:172:731099;;;;
+ffzg:7702;thesis;Marriage of Convenience in Jane Austen’s Pride and Prejudice, Emma and Persuasion;Ðulabic, Ana;Kneževic, Borislav;;7.2.2023;https://urn.nsk.hr/urn:nbn:hr:131:860168;;;;
+ffri:1319;thesis;Microbes and Sovereignty;Djordjevic, Edward;Czerny, Sarah;;25.9.2018;https://urn.nsk.hr/urn:nbn:hr:186:063564;;;;
+ffri:3243;thesis;Translation of Three Short Stories by Tanja Mravak form Croatian into English;Dadic, Daria;Tutek, Nikola;;27.9.2022;https://urn.nsk.hr/urn:nbn:hr:186:260604;;;;
+ffos:6448;thesis;Translating Menus from Croatian into English - Common Mistakes and Approaches;Zundanovic, Dragana;Omazic, Marija;;26.9.2023;https://urn.nsk.hr/urn:nbn:hr:142:087312;;;;
+ffri:2454;thesis;Errors in Machine Translation from Croatian to English: a Corpus-based Approach;Zagorec, Dario;Borucinsky, Mirjana;;14.9.2020;https://urn.nsk.hr/urn:nbn:hr:186:395434;;;;
+ffos:1220;thesis;Women in Frankenstein: Mary Shelley's Novel versus Kenneth Branagh's Film;Pataki, Jelena;"Beric, Borislav; ";;30.6.2014;https://urn.nsk.hr/urn:nbn:hr:142:404215;;;;
+ffri:1409;thesis;The Jezebel Stereotype;Obrazovic, Ivana;Vukelic, Tatjana;;21.9.2018;https://urn.nsk.hr/urn:nbn:hr:186:480668;;;;
+ffos:4279;thesis;The relationship between writing strategies and writing anxiety in EFL;Ðumlija, Andrea;Pavicic Takac, Višnja;;26.9.2018;https://urn.nsk.hr/urn:nbn:hr:142:213703;;;;
+ffos:4287;thesis;"""The Relationship between Writing Anxiety and Beliefs about Writing in Learners Preparing for the State School-leaving Exam in EFL""";Marelja, Ana Marija;Pavicic Takac, Višnja;;26.9.2018;https://urn.nsk.hr/urn:nbn:hr:142:672577;;;;
+ffzg:438;thesis;English as a foreign language: how emotional can it be?;Milanovic, Ivana;Letica Krevelj, Stela;;20.9.2019;https://urn.nsk.hr/urn:nbn:hr:131:370532;;;;
+ffos:5996;thesis;The Effect of Self-corrections on the Quality of the Translated Text;Gajic, Nikolina;Werkmann, Ana;;14.7.2022;https://urn.nsk.hr/urn:nbn:hr:142:389652;;;;
+unipu:4949;thesis;The Symbolical World of the Wonderful Wizard of Oz;Hercigonja, Ines;Grbic, Igor;;24.9.2020;https://urn.nsk.hr/urn:nbn:hr:137:546932;;;;
+ffri:2978;thesis;Translating Multimodal Literature;Ivaniš, Ana;Tutek, Nikola;;27.9.2021;https://urn.nsk.hr/urn:nbn:hr:186:452314;;;;
+ffos:4515;thesis;The Use of Communication Strategies and its Relationship with Willingness to Communicate and Speaking Competence in English as a Foreign Language;Gavric, Manda;Molnar, Draženka;;21.11.2018;https://urn.nsk.hr/urn:nbn:hr:142:150286;;;;
+ffos:2464;thesis;Dystopian Elements in Veronica Roth's Divergent Trilogy and Its Film Adaptations;Nedic, Igor;Oklopcic, Biljana;;27.9.2017;https://urn.nsk.hr/urn:nbn:hr:142:173461;;;;
+ffri:1410;thesis;Translaguaging in an Efl Classroom: Attitudes and Practice;Scopich, Dorotea;Drljaca Margic, Branka;;20.9.2018;https://urn.nsk.hr/urn:nbn:hr:186:847641;;;;
+ffri:3217;thesis;Translation of Scientific Texts form Croatian into English;Marušic, Ivona;Tutek, Nikola;;26.9.2022;https://urn.nsk.hr/urn:nbn:hr:186:171472;;;;
+ufzg:1509;thesis;Recognizing and Overcoming Language Impairment of Young English Learners;Maltar, Lucija;Cindric, Ivana;;11.7.2019;https://urn.nsk.hr/urn:nbn:hr:147:991927;;;;
+ufzg:781;thesis;USA in two world wars;Vesenjak, Mia;Legac, Vladimir;;10.9.2019;https://urn.nsk.hr/urn:nbn:hr:147:056896;;;;
+unizd:2643;thesis;Representation of Women in Films: „Psycho“ (1960), „The Silence of the Lambs“ (1991), „Titanic“ (1997) and „Skyfall“ (2012);Žuvela, Ana;Petkovic, Rajko;;6.7.2018;https://urn.nsk.hr/urn:nbn:hr:162:223315;;;;
+ufzg:3871;thesis;Character traits and language proficiency in EFL;Schiavon, Anna;Cergol, Kristina;;17.4.2023;https://urn.nsk.hr/urn:nbn:hr:147:606039;;;;
+ffos:2704;thesis;"Woman's Question in Contemporary British and American Female Literature as Represented by Doris Lessing's ""The Golden Notebook"" and Alice Walker's ""The Color Purple""";Kovac, Tihana;Oklopcic, Biljana;;11.10.2011;https://urn.nsk.hr/urn:nbn:hr:142:377169;;;;
+ffos:1738;thesis;Translating culture-bound terms in simultaneous interpretation;Šimunic, Tomislav;Omazic, Marija;;5.6.2013;https://urn.nsk.hr/urn:nbn:hr:142:751858;;;;
+ffri:382;thesis;Anglophone Music as Poetry;Lacmanovic, Matea;Gruic-Grmuša, Lovorka;;9.7.2015;https://urn.nsk.hr/urn:nbn:hr:186:194496;;;;
+ffzg:6479;thesis;Detecting Sarcasm in Communication on Twitter;Keckeš, Ines;Grubišic, Marina;;13.9.2022;https://urn.nsk.hr/urn:nbn:hr:131:904278;;;;
+ffri:627;thesis;Student Teacher's of English Viewpoints Towards Computer Assisted Language Learning;Gojevic-Zrnic, Marija;Vodopija-Krstanovic, Irena;;28.9.2016;https://urn.nsk.hr/urn:nbn:hr:186:146359;;;;
+unizd:3450;thesis;Assessment of Self-Regulation in English Vocabulary Learning among Croatian High School Students;Nebes, Tomislav;Martinovic, Anna;;26.9.2019;https://urn.nsk.hr/urn:nbn:hr:162:685491;;;;
+ffos:1004;thesis;"Myths and Stereotypes in Toni Morrison's ""Beloved"" and William Faulkner's ""The Sound and the Fury""";Antolovic, Gordana;Oklopcic, Biljana;;16.9.2013;https://urn.nsk.hr/urn:nbn:hr:142:820273;;;;
+ffos:5787;thesis;Vocabulary Learning Strategies in Online Classes;Rišner, Iva;Molnar, Draženka;;30.9.2021;https://urn.nsk.hr/urn:nbn:hr:142:111628;;;;
+ffzg:8443;thesis;"From ""Miss Bennet"" to ""Dearest, Loveliest Elizabeth!"" - Translating Directness in Directive Speech Acts from the Perspective of Gender Roles";Curlin, Nika;"Grubišic, Marina; Zgaga, Vinko";;12.7.2023;https://urn.nsk.hr/urn:nbn:hr:131:183505;;;;
+ffst:2682;thesis;CROATIAN AND SPANISH EFL LEARNERS’ BELIEFS ABOUT ENGLISH LANGUAGE LEARNING: A FOCUS ON GRAMMAR;Krip, Ina;Šegedin Borovina, Danijela;;2020;https://urn.nsk.hr/urn:nbn:hr:172:965425;;;;
+ffzg:2485;thesis;Magical realism and Australian-ness in Lisa Jacobson’s “The Master Builder’s Wife”;Radivoj, Monika;Polak, Iva;;11.9.2020;https://urn.nsk.hr/urn:nbn:hr:131:353221;;;;
+ufzg:3232;thesis;Strategies for teaching idioms in EFL;Batinic, Eni;"Parizoska, Jelena; ";;4.7.2022;https://urn.nsk.hr/urn:nbn:hr:147:849787;;;;
+unizd:5410;thesis;Racial Issues in Get Out;Lozovina, Dario;Lukic, Marko;;26.5.2021;https://urn.nsk.hr/urn:nbn:hr:162:094982;;;;
+ffzg:7437;thesis;Motivation for learning English in transition from pre-primary to primary level: A longitudinal case study;Kuzmanovic, Tena;Letica Krevelj, Stela;;15.2.2023;https://urn.nsk.hr/urn:nbn:hr:131:942659;;;;
+ffos:2974;thesis;Strategies of Learning Idioms in English as a Foreign Language;Škrbic, Jelena;Pavicic-Takac, Višnja;;10.3.2011;https://urn.nsk.hr/urn:nbn:hr:142:253077;;;;
+unizd:561;thesis;Russianisms in A. Burgess's Novella A Clockwork Orange: Ortographic and Semantic Analysis;Kolega, Lucia;Fabijanic, Ivo;;17.2.2016;https://urn.nsk.hr/urn:nbn:hr:162:045210;;;;
+ffzg:1852;thesis;Computational and Psycholinguistic Approaches to Structural Ambiguity: The Case of Garden Path Sentences;Bajac, Petra;Zovko Dinkovic, Irena;;3.7.2020;https://urn.nsk.hr/urn:nbn:hr:131:051663;;;;
+ffzg:6991;thesis;Indirect Speech Acts with AI Assistants;Špiranec, Marin;Grubišic, Marina;;1.9.2022;https://urn.nsk.hr/urn:nbn:hr:131:978421;;;;
+ffos:3527;thesis;Foreign Language Listening Anxiety: The Relationship between Listening Anxiety and Success in Learning English as a Foreign Language;Bede, Lana;Pavicic Takac, Višnja;;8.7.2011;https://urn.nsk.hr/urn:nbn:hr:142:103922;;;;
+ffzg:7100;thesis;Feathers Floating on Fading Dreams: Reading the Swans in Alexis Wright's The Swan Book;Krcan, Irma;Polak, Iva;;30.9.2022;https://urn.nsk.hr/urn:nbn:hr:131:356853;;;;
+ffzg:5651;thesis;Limits of Metaphorical Play on Reddit;Slamnig, Viktor;Stanojevic, Mateusz-Milan;;17.1.2022;https://urn.nsk.hr/urn:nbn:hr:131:432394;;;;
+unizd:4302;thesis;The Evolution of the Female Lyric 'I' in Sylvia Plath's Poetry;Micarakis, Tihana;Ukic Košta, Vesna;;15.7.2020;https://urn.nsk.hr/urn:nbn:hr:162:345195;;;;
+ffzg:3757;thesis;George Orwell and Arthur Koestler Looking Back on the Spanish Civil War;Babic, Marko;Klepac, Tihana;;24.2.2021;https://urn.nsk.hr/urn:nbn:hr:131:318539;;;;
+ffos:937;thesis;Human Being as a Legal-Political Subject: Pluralism of Hannah Arendt vs Authoritarianism of Carl Schmitt;Lendic, Slaven;Senkovic, Željko;;24.9.2014;https://urn.nsk.hr/urn:nbn:hr:142:923125;;;;
+ffos:4212;thesis;Attitudes towards idioms and idiom learning strategies;Pucelj, Mirna;Pavicic Takac, Višnja;;1.6.2018;https://urn.nsk.hr/urn:nbn:hr:142:609288;;;;
+ffos:4247;thesis;"""Translating Nutrition in Non-fiction: Case Study of """"Eat. Stop. Eat."" ""by Brad Pilon""";Zelenika, Jure;"Omazic, Marija; ";;3.9.2018;https://urn.nsk.hr/urn:nbn:hr:142:302854;;;;
+ffri:1405;thesis;Unpaired Negative Words: the Case of a Missing Antonym;Kolakovic, Nina;Drljaca Margic, Branka;;20.9.2018;https://urn.nsk.hr/urn:nbn:hr:186:820174;;;;
+ffzg:458;thesis;Unique items in translation: Translating 'and' from English into Croatian;Vrhovski, Lucija;Pavlovic, Nataša;;30.9.2019;https://urn.nsk.hr/urn:nbn:hr:131:550488;;;;
+ffri:366;thesis;"Dualities and Binary Oppositions in Robert L. Stevenson's ""Treasure Island""";Hanžek, Katarina;Culjat, Sintija;;30.9.2015;https://urn.nsk.hr/urn:nbn:hr:186:682683;;;;
+ufzg:3699;thesis;Early Foreign Language Acquisition: An Overview of Theory and Research;Vrcek, Karla;"Andraka, Marija; ";;29.9.2022;https://urn.nsk.hr/urn:nbn:hr:147:488159;;;;
+ffos:4607;thesis;From Subordination to Emancipation;Lulic, Dina;Runtic, Sanja;;9.9.2019;https://urn.nsk.hr/urn:nbn:hr:142:544062;;;;
+ffos:2849;thesis;Foreign Language Writing Anxiety: A Comparative Study of English and German language;Vukelic, Sanja;Pavicic-Takac, Višnja;;10.3.2011;https://urn.nsk.hr/urn:nbn:hr:142:320529;;;;
+ffos:3106;thesis;Dehumanized society in Brave new world and 1984;Kamencak, Dijana;Beric, Borislav;;18.2.2011;https://urn.nsk.hr/urn:nbn:hr:142:840411;;;;
+ffos:5343;thesis;The Influence of the Ring on Various Races in J. R. R. Tolkien's The Lord of the Rings;Martinovic, Nera;Matek, Ljubica;;29.9.2020;https://urn.nsk.hr/urn:nbn:hr:142:598979;;;;
+ffos:2546;thesis;Status of the Translation Profession in Croatia;Javorcek, Marta;"Omazic, Marija; Šoštaric, Blaženka";;10.7.2017;https://urn.nsk.hr/urn:nbn:hr:142:969797;;;;
+ffos:5414;thesis;Man of Steel and Batman v Superman: Dawn of Justice: Superhero Narratives in Post-9/11 Era;Prtenjaca, Zvonimir;Matek, Ljubica;;2.9.2020;https://urn.nsk.hr/urn:nbn:hr:142:688762;;;;
+ffos:1403;thesis;The Runic Script and its Characters in Old English and Middle English Texts;Petrinec, Monika;Gradecak Erdeljic, Tanja;;25.9.2013;https://urn.nsk.hr/urn:nbn:hr:142:646193;;;;
+ffos:5763;thesis;Problems and Strategies of Translating Humor in Subtitling: Case Study of Friends;Mikolcic, Monika;Schmidt, Goran;;8.10.2021;https://urn.nsk.hr/urn:nbn:hr:142:118892;;;;
+ffzg:3016;thesis;A corpus analysis of five neologisms from the area of gender and sexuality studies.;Buntak, Ivana;Grubišic, Marina;;29.9.2020;https://urn.nsk.hr/urn:nbn:hr:131:717977;;;;
+ffzg:2647;thesis;A cognitive approach to translating metaphor in self-help discourse: An analysis of Buddha's Brain by Rick Hanson and Richard Mendius and its translation into Croatian;Vuckovic, Marta;Stanojevic, Mateusz-Milan;;15.9.2020;https://urn.nsk.hr/urn:nbn:hr:131:884643;;;;
+ffzg:4095;thesis;Pedagogical Dimensions of Using Stories in Enhancing Young Learners' English Learning Motivation;Matoš, Marija;"Geld, Renata; Slunjski, Edita";;17.5.2021;https://urn.nsk.hr/urn:nbn:hr:131:464362;;;;
+ffos:5410;thesis;Politeness strategies in Donald Trump's discourse;Pavic, Sven;Milic, Goran;;24.7.2020;https://urn.nsk.hr/urn:nbn:hr:142:292730;;;;
+ffzg:7483;thesis;Utopian dream of dystopia in Brave New Word and Nineteen Eighty-four;Harašic, Anita;Polak, Iva;;27.2.2023;https://urn.nsk.hr/urn:nbn:hr:131:705672;;;;
+ffri:3949;thesis;Processing Metaphors: a Case Study on Song Lyrics;Došlovic, Sanja;Brala-Vukanovic, Marija;;21.9.2023;https://urn.nsk.hr/urn:nbn:hr:186:159036;;;;
+ffri:3908;thesis;Violation of Grice's Maxims in American Sitcoms;Reljac, Silvia;Drljaca Margic, Branka;;20.9.2023;https://urn.nsk.hr/urn:nbn:hr:186:183722;;;;
+ffri:3905;thesis;Prijevod teksta s afroamerickog dijalekta na hrvatski jezik;Medanic, Nina;Vukelic, Tatjana;;19.9.2023;https://urn.nsk.hr/urn:nbn:hr:186:591886;;;;
+ffos:1425;thesis;Using Internet in Written Production in English Language Classroom;Vukelja, Doris;Pavicic Takac, Višnja;;6.5.2015;https://urn.nsk.hr/urn:nbn:hr:142:455885;;;;
+unizd:5083;thesis;„Love is the way“: Poredbena korpusna analiza stilskih i žanrovskih obilježja americke country lirike;Dusper, Rachel;Šimicic, Lucija;;19.10.2018;https://urn.nsk.hr/urn:nbn:hr:162:798322;;;;
+ffzg:9852;thesis;Cross-Cultural Research on Video Game Localisation;Novak, Andrej;Nikolic, Kristijan;;13.12.2023;https://urn.nsk.hr/urn:nbn:hr:131:325642;;;;
+ffzg:9846;thesis;Female Work Ethic in Louisa May Alcott's Little Women, Jo's Boys and An Old-Fashioned Girl;Ledinski, Maja;Šesnic, Jelena;;11.12.2023;https://urn.nsk.hr/urn:nbn:hr:131:538533;;;;
+ffri:3920;thesis;Jezik i percepcija: istraživanje o kreiranju stvarnosti - izgradnja svjetova pomocu jezicnih konstrukcija u djelima znanstvene fantastike;Tadej, Tihana;"Tutek, Nikola; ";;27.9.2023;https://urn.nsk.hr/urn:nbn:hr:186:321260;;;;
+ffzg:9881;thesis;Metaphors of Anger: A Comparative Analysis of English and Korean;Andal, Monika;Culig, Janja;;30.11.2024;https://urn.nsk.hr/urn:nbn:hr:131:154426;;;;
+ufzg:500;thesis;Learning English through gaming;Jurenec, Petar Krešimir;Cindric, Ivana;;10.7.2018;https://urn.nsk.hr/urn:nbn:hr:147:798696;;;;
+ffos:2515;thesis;Website Localization with Special Reference to the Case of Airbnb in Croatian;Beljan, Mirna;Schmidt, Goran;;18.9.2017;https://urn.nsk.hr/urn:nbn:hr:142:178430;;;;
+ffzg:7481;thesis;Representations of the French Revolution in Gunpowder Fantasy;Miocevic, Petar;"Polak, Iva; ";;20.2.2023;https://urn.nsk.hr/urn:nbn:hr:131:483104;;;;
+ffzg:6655;thesis;Late-stage capitalism in the works of George Saunders;Elijaš, Antonio;Cvek, Sven;;21.9.2022;https://urn.nsk.hr/urn:nbn:hr:131:775885;;;;
+unizd:6729;thesis;Consumerism and the crisis of postmodern identities in White Noise, Fight Club and You Too Can Have a Body Like Mine;Šestak, Valentina;Lukic, Marko;;22.9.2022;https://urn.nsk.hr/urn:nbn:hr:162:203812;;;;
+ffos:5113;thesis;Feminist Pedagogy in the Works of Chimamanda Ngozi Adichie;Božic, Kristina;Oklopcic, Biljana;;11.9.2020;https://urn.nsk.hr/urn:nbn:hr:142:478797;;;;
+ffos:6455;thesis;Feminist Thought in Literary Works of Mary Wollstonecraft and Jane Austen;Juretic, Karolina;Matek, Ljubica;;11.9.2023;https://urn.nsk.hr/urn:nbn:hr:142:618111;;;;
+ffzg:279;thesis;Povijest židovske zajednice na Indijskom potkontinentu;Pocivavšek, Iva;"Krnic, Krešimir; Da-Don, Kotel";;2019;https://urn.nsk.hr/urn:nbn:hr:131:940013;;;;
+ufzg:3704;thesis;Mindfulness for English Language Teachers;Bušic, Rea;Cergol, Kristina;;29.9.2022;https://urn.nsk.hr/urn:nbn:hr:147:669972;;;;
+ffzg:7349;thesis;Strategic Construal and Visual Representation of English Particle Verbs by Croatian High School Learners;Brecevic, Enio;Geld, Renata;;26.1.2023;https://urn.nsk.hr/urn:nbn:hr:131:414111;;;;
+ffri:1468;thesis;A Corpus-Based Study of English Prepositions Over and Above and Croatian Prepositions nas, znad and preko;Floricic, Ajrin;Memiševic, Anita;;26.9.2017;https://urn.nsk.hr/urn:nbn:hr:186:598792;;;;
+ffzg:4693;thesis;Imagining the Apocalypse in Stephen King's The Stand;Bakic, Lucija;Cvek, Sven;;7.9.2021;https://urn.nsk.hr/urn:nbn:hr:131:782794;;;;
+ffzg:6108;thesis;Inductive and deductive approaches to teaching EFL grammar: Teachers’ attitudes;Blaškovic, Leonarda;Letica Krevelj, Stela;;9.6.2022;https://urn.nsk.hr/urn:nbn:hr:131:462378;;;;
+ffzg:6352;thesis;Politeness strategies in customer-company communication on social media in Turkish and in English;Vincekovic, Ivana;"Grubišic, Marina; Kerovec, Barbara";;14.7.2022;https://urn.nsk.hr/urn:nbn:hr:131:150374;;;;
+unizd:7244;thesis;Exploration of Counterculture Feminism Through the Novels The Group, The Bell Jar, and I’m With the Band;Martinic, Sara;Lukic, Marko;;3.3.2023;https://urn.nsk.hr/urn:nbn:hr:162:313434;;;;
+ffzg:4669;thesis;Conservatism in the U.S.: The Rise of a New Counterculture;Grguric, Kristijan;Grgas, Stipe;;18.6.2021;https://urn.nsk.hr/urn:nbn:hr:131:609064;;;;
+ffzg:4999;thesis;America Through Its Inaugural Poems;Uremovic, Mia;Grgas, Stipe;;20.9.2021;https://urn.nsk.hr/urn:nbn:hr:131:557607;;;;
+ffos:1537;thesis;"Strategies of translating culture-bound items in ""Gilmore Girls""";Milovanovic, Bojana;Omazic, Marija;;29.3.2012;https://urn.nsk.hr/urn:nbn:hr:142:786879;;;;
+ffos:790;thesis;Identity, Society, and Gender in British and American Quest Romance;Vaci, Dajana;Runtic, Sanja;;30.1.2015;https://urn.nsk.hr/urn:nbn:hr:142:735808;;;;
+ffos:5655;thesis;Scripts and Counter-Scripts of Gender in Contemporary Feminist Dystopia;Špiranec, Karla;Oklopcic, Biljana;;9.7.2021;https://urn.nsk.hr/urn:nbn:hr:142:770865;;;;
+ffri:148;thesis;A Populationist Approach to Qualitative Social Research: Towards the Theory of Semiotic Stakeholding;Zubcic, Marko-Luka;Prijic-Samaržija, Snježana;;2.6.2015;https://urn.nsk.hr/urn:nbn:hr:186:139313;;;;
+ffri:3573;thesis;The use of anglicism in the Croatian daily newspaper;Macan, Matea;Drljaca Margic, Branka;;12.12.2022;https://urn.nsk.hr/urn:nbn:hr:186:332620;;;;
+ffzg:489;thesis;Satan as the hero of Paradise Lost;Tvrtkovic, Mak;Brlek, Tomislav;;11.10.2019;https://urn.nsk.hr/urn:nbn:hr:131:756766;;;;
+ffst:2352;thesis;SUVREMENA ETNOGRAFIJA NEMATERIJALNE KULTURNE BAŠTINE POLJICKOG KRAJA;Škarica, Leonora;Dragic, Marko;;16.12.2019;https://urn.nsk.hr/urn:nbn:hr:172:290272;;;;
+ffos:1702;thesis;Magical Realism in Contemporary American Ethnic Writing;Mudrovcic, Tihana;Runtic, Sanja;;31.8.2012;https://urn.nsk.hr/urn:nbn:hr:142:082633;;;;
+ffzg:1831;thesis;Translation of User Manuals from Croatian into English;Koncar, Jelena;Nikolic, Kristijan;;1.7.2020;https://urn.nsk.hr/urn:nbn:hr:131:825329;;;;
+ffzg:6043;thesis;A comparison of the educational potential of professional cloud-based and free, standalone desktop-based subtitling tools;Bekafigo, Andrea;Nikolic, Kristijan;;11.5.2022;https://urn.nsk.hr/urn:nbn:hr:131:088368;;;;
+ffzg:5678;thesis;Gender Bias in English Language Textbooks;Sedmak, Stella;"Grubišic, Marina; ";;27.1.2022;https://urn.nsk.hr/urn:nbn:hr:131:449876;;;;
+ufzg:3319;thesis;Awareness and Use of CLIL in ELT in Lower Primary Education;Travica, Marta;Cindric, Ivana;;13.7.2022;https://urn.nsk.hr/urn:nbn:hr:147:710821;;;;
+unizd:7108;thesis;A Return to Once Upon a Time, Rewriting the Image of Traditional Womanhood in Contemporary Women's Writing;Vranic, Nikolina;Ukic Košta, Vesna;;22.2.2023;https://urn.nsk.hr/urn:nbn:hr:162:480260;;;;
+ffzg:8312;thesis;Exposure to the English language on the internet: comparing Croatian and French university students;Volaric Horvat, Laura;Letica Krevelj, Stela;;4.7.2023;https://urn.nsk.hr/urn:nbn:hr:131:038143;;;;
+ffri:3666;thesis;Translating Prose Fiction: Janko Leskovar's Short Stories in English Translation;Dojcinovic, Nina;Lupic, Ivan;;29.9.2023;https://urn.nsk.hr/urn:nbn:hr:186:152466;;;;
+ufzg:1;thesis;Reading Comprehension Based on Neologisms in the Harry Potter Series;Marušic, Katarina;Šamo, Renata;;2015-09;https://urn.nsk.hr/urn:nbn:hr:147:999686;;;;
