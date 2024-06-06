@@ -1,43 +1,39 @@
-import csv
-import os
 import time
-from api_calls import make_api_call
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import pandas as pd
 
-def create_directory(save_directory):
-    if not os.path.exists(save_directory):
-        os.makedirs(save_directory)
+options = webdriver.EdgeOptions()
 
-def download_documents_from_csv(csv_file, save_directory):
+output_locations = [
+    r"C:\Users\Iggy\Desktop\Faks\2. Semestar\APVO\pdf\01_humanisticke-znanosti",
+    r"C:\Users\Iggy\Desktop\Faks\2. Semestar\APVO\pdf\02_biomedicina-i-zdravstvo",
+    r"C:\Users\Iggy\Desktop\Faks\2. Semestar\APVO\pdf\03_tehnicke-znanosti",
+    r"C:\Users\Iggy\Desktop\Faks\2. Semestar\APVO\pdf\04_drustvene-znanosti",
+    r"C:\Users\Iggy\Desktop\Faks\2. Semestar\APVO\pdf\05_prirodne-znanosti",
+    r"C:\Users\Iggy\Desktop\Faks\2. Semestar\APVO\pdf\06_biotehnicke-znanosti"
+]
 
-    with open(csv_file, 'r') as file:
-        csv_reader = csv.reader(file)
-        next(csv_reader)  # Preskoči zaglavlje
+for i in range(1, 7):
+    url = pd.read_csv(rf"C:\Users\Iggy\Desktop\Faks\2. Semestar\APVO\dabar_popis_radova_{i}.csv", usecols=['url'], delimiter=';')
+    options.add_experimental_option("prefs", {"download.default_directory": output_locations[i-1]})
+    driver = webdriver.Edge(options=options)
+    print(url)
+    for j in range(len(url)):
+        driver.get("https://www.google.com/")
+        driver.find_element(By.TAG_NAME, "body").send_keys(Keys.COMMAND + 't')
+        driver.get(url.iloc[j, 0])
+        time.sleep(1)
+        downloadButton = driver.find_element(By.CLASS_NAME, "pdf_download").click()
+        time.sleep(2)
+        driver.find_element(By.TAG_NAME, "body").send_keys(Keys.COMMAND + 'w')
 
-        for row in csv_reader:
-            document_url = row[7]  # stupac sadrži URL dokumenta
-            document_title = row[2].replace("/", "_")  # stupac sadrži naslov dokumenta
-            doc_path = "<putanja>/DownloadedStudentFiles/" + document_title + ".pdf" #path do moguceg postojeceg dokumenta
-            if os.path.exists(doc_path):
-                print("Dokument već postoji!")
-            else:
-                document_url += "/datastream/PDF/download"
-                print(document_url)
-                document_content = make_api_call(document_url)
 
-                if document_content:
-                    with open(os.path.join(save_directory, f"{document_title}.pdf"), 'wb') as doc_file:
-                        doc_file.write(document_content)
-                    print(f"Dokument '{document_title}' uspješno preuzet i spremljen.")
-                else:
-                    print(f"Dokument '{document_title}' nije uspješno preuzet.")
 
-                time.sleep(10)
+driver.quit()
 
-save_directory = '<putanja>/DownloadedStudentFiles'
-create_directory(save_directory)
 
-# Postavi putanju do CSV datoteke i direktorij za spremanje dokumenata
-for i in range(1, 5):
-    csv_file_path = f"<putanja>/scripts/dabar_popis_radova_{i}.csv"
 
-    download_documents_from_csv(csv_file_path, save_directory)
+
+
