@@ -18,4 +18,6 @@ class StudentFile (models.Model):
     thesisDefensePlace = models.CharField(max_length=100,null=True)
     wordCount = models.IntegerField(null=True)
     fileSize = models.IntegerField(null=True, blank=True)
+    OriginalFileName = models.CharField(max_length=255, null=True, blank=True)
+    UidFileName = models.CharField(max_length=255, null=True, blank=True)
     

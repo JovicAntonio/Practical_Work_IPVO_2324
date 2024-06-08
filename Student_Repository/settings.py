@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import firebase_admin
+from firebase_admin import credentials, storage
+import google.oauth2.service_account
+import google
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -133,3 +137,11 @@ STATIC_ROOT = '/app/static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JSON_CRED = STATIC_ROOT + "/apvo-file-storage-v1-firebase-adminsdk-jtela-31214d74de.json"
+CRED = credentials.Certificate(JSON_CRED)
+firebase_admin.initialize_app(CRED, {
+    'storageBucket': 'apvo-file-storage-v1.appspot.com'
+})
+
+GOOGLE_AUTH_CREDS = google.oauth2.service_account.Credentials.from_service_account_file(JSON_CRED)

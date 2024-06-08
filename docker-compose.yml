@@ -4,6 +4,7 @@ services:
   web1:
     build: .
     command: python manage.py runserver --insecure 172.19.0.3:80
+    restart: always
     volumes:
       - .:/app
       - ./static:/app/static  # Mount a volume for storing static files
@@ -16,6 +17,7 @@ services:
   web2:
     build: .
     command: python manage.py runserver --insecure 172.19.0.4:80
+    restart: always
     volumes:
       - .:/app
       - ./static:/app/static  # Mount a volume for storing static files
@@ -28,6 +30,7 @@ services:
   web3:
     build: .
     command: python manage.py runserver --insecure 172.19.0.6:80
+    restart: always
     volumes:
       - .:/app
       - ./static:/app/static  # Mount a volume for storing static files
