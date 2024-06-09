@@ -25,11 +25,12 @@ from django.views.generic.base import RedirectView
 from django.urls import path, reverse_lazy
 
 urlpatterns = [
-    path('', RedirectView.as_view(url='list_data/')),
+    path('', RedirectView.as_view(url='pregled_dokumenata/')),
     path("admin/", admin.site.urls),
-    path("add/", views.put_data, name="put_data"),
-    path("list_data/", views.list_data, name="list_data"),
-
+    path("novi_dokument/", views.put_data, name="put_data"),
+    path("pregled_dokumenata/", views.list_data, name="list_data"),
+    path('dokument/<int:id>/', views.student_file_detail, name='student_file_detail'),
+    path('brisanje_dokumenta/<int:id>', views.delete_file_detail, name='delete_file_detail'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

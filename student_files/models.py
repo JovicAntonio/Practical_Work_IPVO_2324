@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ValidationError
 import os
 # Create your models here.
 class StudentFile (models.Model):
@@ -21,3 +22,7 @@ class StudentFile (models.Model):
     OriginalFileName = models.CharField(max_length=255, null=True, blank=True)
     UidFileName = models.CharField(max_length=255, null=True, blank=True)
     
+    def clean(self):
+        super().clean()
+        if not self.file.name.endswith('.pdf'):
+            raise ValidationError("Datoteka mora biti u PDF formatu.")

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brisanje dokumenta</title>
+    <script type="text/javascript">
+        function showPopup() {
+            alert("Uspješno ste obrisali dokument!");
+        }
+
+        function redirectAfterPopup() {
+            setTimeout(function() {
+                window.location.href = "{% url 'list_data' %}";
+            }, 100);
+        }
+
+        window.onload = function() {
+            showPopup();
+            redirectAfterPopup();
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

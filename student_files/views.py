@@ -8,14 +8,28 @@ from django.core.files.storage import default_storage
 import os
 import uuid
 from django.conf import settings
+from django.http import Http404
+from django.views.decorators.clickjacking import xframe_options_sameorigin, xframe_options_exempt
+from datetime import timedelta
 
 
 # Create your views here.
 
-class  StudentFileViewSet(viewsets.ModelViewSet):
+class StudentFileViewSet(viewsets.ModelViewSet):
     queryset = StudentFile.objects.all()
     serializer_class = StudentFileSerializer
 
+
+def pdf2text(pdf_path):
+    pdf_document = fitz.open(pdf_path)
+    
+    text = ""
+    
+    for page_num in range(5, 10):
+        page = pdf_document.load_page(page_num)
+        text += page.get_text()
+    
+    return text
 
 def put_data(request):
     if request.method == 'POST' or request.method == 'PUT':
@@ -28,6 +42,13 @@ def put_data(request):
             uid_with_ext = uid + extension
             student_file.OriginalFileName = original_file_name
             student_file.UidFileName = uid_with_ext
+            student_file.fileSize = student_file.file.size
+
+            #pdf_text = pdf2text(request.FILES['file'])
+
+            #classificaton = getClassification(conn, pdf_text)
+
+            #student_file.Classification = classificaton
             client = storage.Client(credentials=settings.GOOGLE_AUTH_CREDS)
             bucket = client.bucket("apvo-file-storage-v1.appspot.com")
             blob = bucket.blob(uid_with_ext)
@@ -42,12 +63,12 @@ def put_data(request):
 
 def list_data(request):
     filter_options = [        
-        {'value': 'title', 'display': 'Title'},
-        {'value': 'studentFirstName', 'display': 'First Name'},
-        {'value': 'studentLastName', 'display': 'Last Name'},
-        {'value': 'thesisDefenseDate', 'display': 'Thesis Defense Date'},
-        {'value': 'thesisType', 'display': 'Thesis Type'},
-        {'value': 'thesisDefensePlace', 'display': 'Thesis Defense Place'},
+        {'value': 'title', 'display': 'Naslov'},
+        {'value': 'studentFirstName', 'display': 'Ime'},
+        {'value': 'studentLastName', 'display': 'Prezime'},
+        {'value': 'thesisDefenseDate', 'display': 'Datum obrane'},
+        {'value': 'thesisType', 'display': 'Tip studentskog rada'},
+        {'value': 'thesisDefensePlace', 'display': 'Mjesto obrane'},
         ]
     
     if request.method == 'POST':
@@ -63,3 +84,34 @@ def list_data(request):
         queryset = StudentFile.objects.all()
 
     return render(request, 'student_files/list_data.html', {'queryset': queryset, 'filter_options': filter_options})
+
+@xframe_options_exempt
+def student_file_detail(request, id):
+    storage_url = ""
+    try:
+        student_file = StudentFile.objects.get(id=id)
+
+        client = storage.Client(credentials=settings.GOOGLE_AUTH_CREDS)
+        bucket = client.bucket("apvo-file-storage-v1.appspot.com")
+        blob = bucket.blob(student_file.UidFileName)
+        storage_url = blob.generate_signed_url(expiration=timedelta(days=1), method='GET')
+
+    except StudentFile.DoesNotExist:
+        raise Http404("Takav dokument ne postoji!")
+    return render(request, 'student_files/student_file_detail.html', {'student_file' : student_file, 'storage_url' : storage_url})
+
+
+def delete_file_detail(request, id):
+    storage_url = ""
+    try:
+        student_file = StudentFile.objects.get(id=id)
+        client = storage.Client(credentials=settings.GOOGLE_AUTH_CREDS)
+        bucket = client.bucket("apvo-file-storage-v1.appspot.com")
+        blob = bucket.blob(student_file.UidFileName)
+        blob.delete()
+        student_file.delete()
+
+    except StudentFile.DoesNotExist:
+        raise Http404("Došlo je do greške prilikom brisanja. Takav dokument ne postoji!")
+
+    return render(request, 'student_files/delete_popup.html')

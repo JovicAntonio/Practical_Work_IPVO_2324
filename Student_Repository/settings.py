@@ -81,6 +81,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Student_Repository.wsgi.application'
 
+X_FRAME_OPTIONS = "DENY"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases

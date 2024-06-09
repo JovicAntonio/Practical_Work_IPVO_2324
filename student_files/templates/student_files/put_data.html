@@ -1,7 +1,21 @@
-<!-- add_data.html -->
-
-<form method="post" enctype="multipart/form-data" action="{% url 'put_data' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Spremi</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dodaj dokument</title>
+        <body>
+            {% load static %}
+            <link rel="stylesheet" href="{% static 'student_files/style.css' %}">
+            <div class="navbar">
+                <a href="{% url 'list_data' %}" class="button font">Pregled svih dokumenata</a>
+                <a href="{% url 'admin:index' %}" class="button font">Idi na Admin Stranicu</a>
+            </div>
+            <form class="font" method="post" enctype="multipart/form-data" action="{% url 'put_data' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Spremi</button>
+            </form>
+        </body>
+    </head>
+</html>

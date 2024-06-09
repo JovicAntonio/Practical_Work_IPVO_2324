@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregled dokumenta</title>
+    <link rel="stylesheet" href="{% static 'student_files/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'admin:index' %}" class="button font">Idi na Admin Stranicu</a>
+        <a href="{% url 'list_data' %}" class="button font">Povratak na Pregled dokumenata</a>
+    </div>
+    <center>
+        <h2 class="font">{{ student_file.title }}</h2>
+    </center>
+    <div class="content-wrapper">
+        <div class="table-container">
+            <center>
+            <table border="2" width="80%">
+                <tr>
+                    <th>Naslov</th>
+                    <td>{{ student_file.title }}</td>
+                </tr>
+                <tr>
+                    <th>Dokument</th>
+                    <td><a href="{{ student_file.file.url }}" target="_blank">{{ student_file.file }}</a></td>
+                </tr>
+                <tr>
+                    <th>Ime</th>
+                    <td>{{ student_file.studentFirstName }}</td>
+                </tr>
+                <tr>
+                    <th>Prezime</th>
+                    <td>{{ student_file.studentLastName }}</td>
+                </tr>
+                <tr>
+                    <th>Datum obrane</th>
+                    <td>{{ student_file.thesisDefenseDate }}</td>
+                </tr>
+                <tr>
+                    <th>Tip studentskog rada</th>
+                    <td>{{ student_file.thesisType }}</td>
+                </tr>
+                <tr>
+                    <th>Mjesto obrane</th>
+                    <td>{{ student_file.thesisDefensePlace }}</td>
+                </tr>
+                <tr>
+                    <th>Broj riječi</th>
+                    <td>{{ student_file.wordCount }}</td>
+                </tr>
+                <tr>
+                    <th>Veličina datoteke</th>
+                    <td><div class="file-size" data-size="{{ student_file.fileSize }}"/></td>
+                </tr>
+            </table>
+        </center>
+        <div style="margin-top: 20px;">
+            <a href="/brisanje_dokumenta/{{student_file.id }}">
+                <button class="deletebutton font">Obriši dokument</button>
+            </a>
+        </div>
+        </div>
+        <div class="embed-container">
+            <center>
+                <embed src="{{ storage_url }}" type="application/pdf" height="500vh" width="90%"></embed>
+            </center>
+        </div>
+    </div>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var fileSizeDivs = document.querySelectorAll('.file-size');
+            fileSizeDivs.forEach(function(div) {
+                var fileSizeBytes = parseInt(div.dataset.size);
+                div.textContent = formatFileSize(fileSizeBytes);
+            });
+        });
+        
+        function formatFileSize(bytes) {
+            if (bytes <= 1024) {
+                return bytes + ' bytes';
+            } else if (bytes <= 1024 * 1024) {
+                return (bytes / 1024).toFixed(2) + ' KiB';
+            } else {
+                return (bytes / (1024 * 1024)).toFixed(2) + ' MiB';
+            }
+        }
+        </script>
+</body>
+</html>

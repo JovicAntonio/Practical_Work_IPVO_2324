@@ -1,0 +1,239 @@
+/* Add these new styles */
+
+.content-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.table-container {
+    float: right;
+    width: 60%;
+}
+
+.embed-container {
+    float: left;
+    width: 40%;
+}
+
+/* Existing styles */
+form button:hover {
+    background-color: #264b5d;
+}
+
+.font {
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+}
+
+.navbar {
+    background-color: #264b5d;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.content {
+    padding: 20px;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+/* Centering and styling form fields */
+form {
+    padding: 0 30% 0 30%;
+}
+form label {
+    display: inline;
+    margin-bottom: 5px;
+    color: #ffffff; /* Adjust label color */
+    
+}
+
+/* Add translations for the labels */
+label[for="filter_type"] {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000; /* Adjust label color */
+}
+
+label[for="filter_value"] {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000; /* Adjust label color */
+}
+
+form input[type="text"],
+form input[type="file"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    width: auto;
+    margin-top: 20px;
+    background-color: #264b5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.addbutton {
+    float: right;
+    width: auto;
+    margin: 0 10% 0 20px;
+    background-color: #264b5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.deletebutton {
+    float: right;
+    width: auto;
+    margin: 0 10% 0 20px;
+    background-color: rgb(230, 66, 66);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #264b5d;
+}
+
+form label[for="id_title"]::after {
+    content: "Naslov:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+form label[for="id_file"]::after {
+    content: "Datoteka:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+form label[for="id_studentFirstName"]::after {
+    content: "Ime studenta:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+form label[for="id_studentLastName"]::after {
+    content: "Prezime studenta:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+form label[for="id_thesisDefenseDate"]::after {
+    content: "Datum obrane rada:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+form label[for="id_thesisType"]::after {
+    content: "Vrsta rada:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+form label[for="id_thesisDefensePlace"]::after {
+    content: "Mjesto obrane rada:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+form label[for="id_wordCount"]::after {
+    content: "Broj rijeci:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+form label[for="id_fileSize"]::after {
+    content: "Velicina datoteke:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+
+}
+
+/* Centering the table */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%; /* Adjusted to 100% to fit the container */
+}
+
+/* Styling table header */
+th {
+    background-color: #264b5d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Styling table cells */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Adding bottom border for each cell */
+}
+
+/* Applying alternate row background color */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+tr:hover {
+    background-color: #e0e0e0;
+}
