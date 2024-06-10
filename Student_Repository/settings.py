@@ -16,6 +16,8 @@ import firebase_admin
 from firebase_admin import credentials, storage
 import google.oauth2.service_account
 import google
+from transformers import BertForSequenceClassification, BertTokenizer
+import torch
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -146,3 +148,9 @@ firebase_admin.initialize_app(CRED, {
 })
 
 GOOGLE_AUTH_CREDS = google.oauth2.service_account.Credentials.from_service_account_file(JSON_CRED)
+
+LABELS = ['prirodne-znanosti', 'biomedicina-i-zdravstvo', 'tehnicke-znanosti', 'drustvene-znanosti', 'biotehnicke-znanosti', 'humanisticke-znanosti']
+
+MODEL_NAME = STATIC_ROOT + 'trained_bert_model'
+MODEL = BertForSequenceClassification.from_pretrained(MODEL_NAME, num_labels=len(LABELS))
+TOKENIZER = BertTokenizer.from_pretrained(MODEL_NAME)

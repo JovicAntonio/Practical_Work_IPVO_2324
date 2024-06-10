@@ -31,6 +31,10 @@
                     <td><a href="{{ student_file.file.url }}" target="_blank">{{ student_file.file }}</a></td>
                 </tr>
                 <tr>
+                    <th>Područje rada</th>
+                    <td>{{ student_file.Classification }}</td>
+                </tr>
+                <tr>
                     <th>Ime</th>
                     <td>{{ student_file.studentFirstName }}</td>
                 </tr>
@@ -68,7 +72,7 @@
         </div>
         <div class="embed-container">
             <center>
-                <embed src="{{ storage_url }}" type="application/pdf" height="500vh" width="90%"></embed>
+                <embed src="{{ storage_url }}" type="application/pdf" height="510vh" width="90%"></embed>
             </center>
         </div>
     </div>

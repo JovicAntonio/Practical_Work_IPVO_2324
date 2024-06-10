@@ -11,14 +11,14 @@ from django.conf import settings
 from django.http import Http404
 from django.views.decorators.clickjacking import xframe_options_sameorigin, xframe_options_exempt
 from datetime import timedelta
-
+import fitz
+import torch
 
 # Create your views here.
 
 class StudentFileViewSet(viewsets.ModelViewSet):
     queryset = StudentFile.objects.all()
     serializer_class = StudentFileSerializer
-
 
 def pdf2text(pdf_path):
     pdf_document = fitz.open(pdf_path)
@@ -30,6 +30,20 @@ def pdf2text(pdf_path):
         text += page.get_text()
     
     return text
+
+def getClassification(text):
+    # Tokenize the input text
+    inputs = settings.TOKENIZER(text, return_tensors="pt", padding=True, truncation=True, max_length=512)
+
+    # Get model predictions
+    with torch.no_grad():
+        outputs = settings.MODEL(**inputs)
+        logits = outputs.logits
+        predicted_class_id = torch.argmax(logits, dim=-1).item()
+
+    # Decode the predicted class ID to get the label
+    predicted_label = settings.LABELS[predicted_class_id]
+    return predicted_label
 
 def put_data(request):
     if request.method == 'POST' or request.method == 'PUT':
@@ -44,15 +58,27 @@ def put_data(request):
             student_file.UidFileName = uid_with_ext
             student_file.fileSize = student_file.file.size
 
-            #pdf_text = pdf2text(request.FILES['file'])
-
-            #classificaton = getClassification(conn, pdf_text)
-
-            #student_file.Classification = classificaton
             client = storage.Client(credentials=settings.GOOGLE_AUTH_CREDS)
             bucket = client.bucket("apvo-file-storage-v1.appspot.com")
             blob = bucket.blob(uid_with_ext)
             blob.upload_from_file(request.FILES['file'])
+
+            tmp_file_path = os.path.join(settings.MEDIA_ROOT, original_file_name)
+
+            with open(tmp_file_path, 'wb+') as destination:
+                for chunk in request.FILES['file'].chunks():
+                    destination.write(chunk)
+
+            pdf_text = pdf2text(tmp_file_path)
+            try:
+                os.remove(tmp_file_path)
+            except:
+                pass
+
+            classificaton = getClassification(pdf_text)
+
+            student_file.Classification = classificaton
+
 
             form.save()
             return redirect('list_data')

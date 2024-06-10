@@ -5,4 +5,4 @@ from .models import StudentFile
 class StudentFileForm(forms.ModelForm):
     class Meta:
         model = StudentFile
-        exclude = ['OriginalFileName', 'UidFileName', "fileSize"]
+        exclude = ['OriginalFileName', 'UidFileName', "fileSize", "Classification"]

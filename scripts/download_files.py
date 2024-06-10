@@ -29,11 +29,4 @@ for i in range(1, 7):
         time.sleep(2)
         driver.find_element(By.TAG_NAME, "body").send_keys(Keys.COMMAND + 'w')
 
-
-
 driver.quit()
-
-
-
-
-
