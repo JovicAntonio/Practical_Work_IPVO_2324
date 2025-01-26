@@ -13,6 +13,8 @@ from django.views.decorators.clickjacking import xframe_options_sameorigin, xfra
 from datetime import timedelta
 import fitz
 import torch
+import torch.nn.functional as F
+from sentence_transformers import SentenceTransformer
 
 # Create your views here.
 
@@ -21,29 +23,40 @@ class StudentFileViewSet(viewsets.ModelViewSet):
     serializer_class = StudentFileSerializer
 
 def pdf2text(pdf_path):
+
+    extracted_sections = {}
+    section_titles = ["Sažetak","Summary"]
     pdf_document = fitz.open(pdf_path)
     
-    text = ""
-    
-    for page_num in range(5, 10):
-        page = pdf_document.load_page(page_num)
-        text += page.get_text()
-    
+    for page_num in range(len(pdf_document)):
+        page = pdf_document[page_num]
+        text = page.get_text()
+
+        for title in section_titles:
+            if title in text:
+                start_index = text.find(title)
+                section_text = text[start_index:]
+                extracted_sections[title] = section_text
+    pdf_document.close()
+
+    text = "".join(extracted_sections.values()).replace("\n", " ")
+
     return text
 
 def getClassification(text):
-    # Tokenize the input text
-    inputs = settings.TOKENIZER(text, return_tensors="pt", padding=True, truncation=True, max_length=512)
+    new_embedding = settings.EMBEDDER.encode(text, convert_to_tensor=True)
 
-    # Get model predictions
+    settings.MODEL.eval()
     with torch.no_grad():
-        outputs = settings.MODEL(**inputs)
-        logits = outputs.logits
-        predicted_class_id = torch.argmax(logits, dim=-1).item()
+        new_prediction = settings.MODEL(new_embedding)
+        probabilities = F.softmax(new_prediction)
+        confidence = torch.max(probabilities).item()
 
-    # Decode the predicted class ID to get the label
-    predicted_label = settings.LABELS[predicted_class_id]
-    return predicted_label
+        predicted_class = torch.argmax(new_prediction).item()
+        predicted_label = settings.LABEL_ENCODER.inverse_transform([predicted_class])
+
+    predicted_label = settings.LABEL_ENCODER.inverse_transform([predicted_class])
+    return (predicted_label[0], confidence)
 
 def put_data(request):
     if request.method == 'POST' or request.method == 'PUT':
@@ -75,10 +88,10 @@ def put_data(request):
             except:
                 pass
 
-            classificaton = getClassification(pdf_text)
+            classificaton, confidence = getClassification(pdf_text)
 
             student_file.Classification = classificaton
-
+            student_file.Confidence = confidence
 
             form.save()
             return redirect('list_data')

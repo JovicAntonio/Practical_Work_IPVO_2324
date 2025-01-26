@@ -16,8 +16,10 @@ import firebase_admin
 from firebase_admin import credentials, storage
 import google.oauth2.service_account
 import google
-from transformers import BertForSequenceClassification, BertTokenizer
 import torch
+import torch.nn as nn
+import sklearn
+import warnings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -36,8 +38,8 @@ ALLOWED_HOSTS = [
     '*'
 ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = '/app/media/'
+MEDIA_URL = '/'
+MEDIA_ROOT = '/app/'
 
 
 # Application definition
@@ -94,7 +96,7 @@ DATABASES = {
         "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        "HOST": "postgres",
+        "HOST": "host.docker.internal",
         "PORT": 5432,
     }
 }
@@ -141,16 +143,21 @@ STATIC_ROOT = '/app/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-JSON_CRED = STATIC_ROOT + "/apvo-file-storage-v1-firebase-adminsdk-jtela-31214d74de.json"
+JSON_CRED = STATIC_ROOT + "apvo-file-storage-v1-firebase-adminsdk-jtela-31214d74de.json"
 CRED = credentials.Certificate(JSON_CRED)
-firebase_admin.initialize_app(CRED, {
-    'storageBucket': 'apvo-file-storage-v1.appspot.com'
-})
+try:
+    firebase_admin.initialize_app(CRED, {
+        'storageBucket': 'apvo-file-storage-v1.appspot.com'
+    })
+except:
+    pass
 
 GOOGLE_AUTH_CREDS = google.oauth2.service_account.Credentials.from_service_account_file(JSON_CRED)
 
-LABELS = ['prirodne-znanosti', 'biomedicina-i-zdravstvo', 'tehnicke-znanosti', 'drustvene-znanosti', 'biotehnicke-znanosti', 'humanisticke-znanosti']
+MODEL_NAME = STATIC_ROOT + 'trained_model/'
 
-MODEL_NAME = STATIC_ROOT + 'trained_bert_model'
-MODEL = BertForSequenceClassification.from_pretrained(MODEL_NAME, num_labels=len(LABELS))
-TOKENIZER = BertTokenizer.from_pretrained(MODEL_NAME)
+warnings.filterwarnings("ignore")
+
+MODEL =  torch.jit.load(MODEL_NAME + "model_scripted.pt") #torch.load(MODEL_NAME + "model.mdl")
+LABEL_ENCODER = torch.load(MODEL_NAME + "label_encoder.lblenc")
+EMBEDDER = torch.load(MODEL_NAME + "embedder.emb")

@@ -1,4 +1,4 @@
-# Practical_Work_IPVO_2324
+# IIS projekt 2025
 
 ## Za REST framework paket
 
@@ -6,17 +6,10 @@
 py -m pip install djangorestframework
 ```
 
-ili cak i:
+ili čak i:
 
 ```bash
 pip install djangorestframework
-```
-
-## Pristupni podaci na pgadmin
-
-```py
-PGADMIN_DEFAULT_EMAIL: pgadmin@gmail.com
-PGADMIN_DEFAULT_PASSWORD: pgAdmin_Pa55w0rd
 ```
 
 ## Pristupni podaci za spajanje na postgres server u pgadminu
@@ -28,7 +21,7 @@ DATABASES = {
         "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        "HOST": "postgres",
+        "HOST": "<IP adresa docker container-a>",
         "PORT": 5432,
     }
 }
@@ -39,22 +32,11 @@ DATABASES = {
 Prvo je potrebno, prije nego je i jedan servis dignut preko Docker-a, pokrenuti naredbu:
 
 ```sh
-python manage.py makemigrations
+docker-compose exec web1 python manage.py makemigrations
 ```
 
 Nakon pokretanja Docker-a i uspješnog dizanja baze, potrebno je pokrenuti sljedeću naredbu kako bi promjene bile prihvaćene prenesle se na bazu:
 
 ```sh
-docker-compose exec web python manage.py migrate
+docker-compose exec web1 python manage.py migrate
 ```
-
-## Dizanje servisa nakon prvog postavljanja
-
-Nakon prvog postavljanja, postgres i pgadmin promijene dopuštenja na svim datotekama u postgres_data i pgadmin_data mapama pa `docker-compose` ne može dignuti servise zbog čega javi error. Prije `docker-compose`-a potrebno je pokrenuti naredbe:
-
-```sh
-sudo chown -R 1000:1000 ./pgadmin_data/ 
-sudo chown -R 1000:1000 ./postgres_data/
-```
-
-Nakon toga servisi se normalno dižu.

@@ -1,46 +1,37 @@
-version: '4'
-
 services:
   web1:
     build: .
-    command: python manage.py runserver --insecure 172.19.0.3:80
+    command: python manage.py runserver 172.19.0.3:80
     restart: always
     volumes:
       - .:/app
-      - ./static:/app/static  # Mount a volume for storing static files
-      - ./media:/app/media:rw # Mount a volume for storing media files
     networks:
       mreza:
         ipv4_address: 172.19.0.3
-    depends_on:
-      - postgres
+    extra_hosts:
+    - "host.docker.internal:172.17.0.1"   
   web2:
     build: .
-    command: python manage.py runserver --insecure 172.19.0.4:80
+    command: python manage.py runserver 172.19.0.4:80
     restart: always
     volumes:
       - .:/app
-      - ./static:/app/static  # Mount a volume for storing static files
-      - ./media:/app/media:rw  # Mount a volume for storing media files
     networks:
       mreza:
         ipv4_address: 172.19.0.4
-    depends_on:
-      - postgres
+    extra_hosts:
+    - "host.docker.internal:172.17.0.1"
   web3:
     build: .
-    command: python manage.py runserver --insecure 172.19.0.6:80
+    command: python manage.py runserver 172.19.0.6:80
     restart: always
     volumes:
       - .:/app
-      - ./static:/app/static  # Mount a volume for storing static files
-      - ./media:/app/media:rw  # Mount a volume for storing media files
     networks:
       mreza:
         ipv4_address: 172.19.0.6
-    depends_on:
-      - postgres
-
+    extra_hosts:
+    - "host.docker.internal:172.17.0.1"
   loadBalancer:
     image: nginx
     ports:
@@ -50,37 +41,6 @@ services:
     networks:
       mreza:
         ipv4_address: 172.19.0.5
-    depends_on:
-      - postgres
-
-  pgadmin:
-    image: dpage/pgadmin4
-    container_name: pgadmin4_container
-    restart: always
-    ports:
-      - "8888:80"
-    user: root
-    environment:
-      PGADMIN_DEFAULT_EMAIL: pgadmin@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: pgAdmin_Pa55w0rd
-    volumes:
-      - ./pgadmin_data:/app/pgadmin
-    networks:
-      mreza:
-        ipv4_address: 172.19.0.7
-    depends_on:
-      - postgres
-
-  postgres:
-    image: postgres:latest
-    environment:
-      POSTGRES_PASSWORD: postgres
-    user: root
-    volumes:
-      - ./postgres_data:/app/postgresql/data
-    networks:
-      mreza:
-        ipv4_address: 172.19.0.8
 
 networks:
   mreza:

@@ -41,7 +41,7 @@
         </tr>
         {% for student_file in queryset %}
             <tr style="margin-left: 5px; margin-bottom: 4px;">
-                <td class="font"><a href="/dokument/{{student_file.id }}">{{ student_file.title }}<a></td>
+                <td class="font"><a href="/dokument/{{student_file.id }}/">{{ student_file.title }}<a></td>
                 <td class="font"><a href="{{ student_file.file.url }}" target="_blank">{{ student_file.file }}</a></td>
                 <td class="font">{{ student_file.studentFirstName }}</td>
                 <td class="font">{{ student_file.studentLastName }}</td>

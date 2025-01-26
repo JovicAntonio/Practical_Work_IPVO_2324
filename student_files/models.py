@@ -22,6 +22,7 @@ class StudentFile (models.Model):
     OriginalFileName = models.CharField(max_length=255, null=True, blank=True)
     UidFileName = models.CharField(max_length=255, null=True, blank=True)
     Classification = models.CharField(max_length=255, null=True, blank=True)
+    Confidence = models.FloatField(null=True, blank=True)
     
     def clean(self):
         super().clean()
