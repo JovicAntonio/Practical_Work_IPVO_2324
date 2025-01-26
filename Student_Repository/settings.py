@@ -158,6 +158,6 @@ MODEL_NAME = STATIC_ROOT + 'trained_model/'
 
 warnings.filterwarnings("ignore")
 
-MODEL =  torch.jit.load(MODEL_NAME + "model_scripted.pt") #torch.load(MODEL_NAME + "model.mdl")
-LABEL_ENCODER = torch.load(MODEL_NAME + "label_encoder.lblenc")
-EMBEDDER = torch.load(MODEL_NAME + "embedder.emb")
+MODEL =  torch.jit.load(MODEL_NAME + "multi_input_classifier.pt") #torch.jit.load(MODEL_NAME + "model_scripted.pt")
+LABEL_ENCODER = torch.load(MODEL_NAME + "multi_input_label_encoder.lbl") #torch.load(MODEL_NAME + "label_encoder.lblenc")
+EMBEDDER = torch.load(MODEL_NAME + "multi_input_embedder.emb") #torch.load(MODEL_NAME + "embedder.emb")

@@ -84,6 +84,7 @@ label[for="filter_value"] {
 form input[type="text"],
 form input[type="file"],
 form input[type="number"],
+form input[type="date"],
 form select {
     width: 100%;
     padding: 10px;
@@ -184,14 +185,6 @@ form label[for="id_thesisType"]::after {
 }
 form label[for="id_thesisDefensePlace"]::after {
     content: "Mjesto obrane rada:";
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #000;
-
-}
-form label[for="id_wordCount"]::after {
-    content: "Broj rijeci:";
     display: block;
     font-weight: bold;
     margin-bottom: 5px;

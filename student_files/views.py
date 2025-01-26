@@ -23,32 +23,60 @@ class StudentFileViewSet(viewsets.ModelViewSet):
     serializer_class = StudentFileSerializer
 
 def pdf2text(pdf_path):
-
+    word_count = 0
+    extracted_keywords = ""
     extracted_sections = {}
     section_titles = ["Sažetak","Summary"]
+    section_keywords = ["Ključne riječi", "Keywords"]
     pdf_document = fitz.open(pdf_path)
     
+    text_found = False
+    keywords_found = False
+
+    with fitz.open(pdf_path) as doc:
+        text = chr(12).join([page.get_text() for page in doc])
+        word_count = len(text.strip(',.!?:;').split())
+
     for page_num in range(len(pdf_document)):
         page = pdf_document[page_num]
         text = page.get_text()
 
-        for title in section_titles:
-            if title in text:
-                start_index = text.find(title)
-                section_text = text[start_index:]
-                extracted_sections[title] = section_text
+        if not text_found:
+            for title in section_titles:
+                if title in text:
+                    start_index = text.find(title)
+                    section_text = text[start_index:]
+                    extracted_sections[title] = section_text
+                    text_found = True
+                    break
+
+        if not keywords_found:
+            for keyword in section_keywords:
+                if keyword in text:
+                    for line in text.splitlines():
+                        if keyword in line:
+                            extracted_keywords = line.strip().replace(keyword, "").replace(":", "")
+                            keywords_found = True
+                            break
+        
+        if keywords_found and text_found:
+            break
+
     pdf_document.close()
+    summary = []
+    keywords = []
+    summary.append("".join(extracted_sections.values()).replace("\n", " "))
+    keywords.append(extracted_keywords)
 
-    text = "".join(extracted_sections.values()).replace("\n", " ")
+    return (summary, keywords, word_count)
 
-    return text
-
-def getClassification(text):
-    new_embedding = settings.EMBEDDER.encode(text, convert_to_tensor=True)
+def getClassification(text, keywords):
+    new_text_embedding = settings.EMBEDDER.encode(text, convert_to_tensor=True)
+    new_keyword_embedding = settings.EMBEDDER.encode(keywords, convert_to_tensor=True)
 
     settings.MODEL.eval()
     with torch.no_grad():
-        new_prediction = settings.MODEL(new_embedding)
+        new_prediction = settings.MODEL(new_text_embedding, new_keyword_embedding)
         probabilities = F.softmax(new_prediction)
         confidence = torch.max(probabilities).item()
 
@@ -82,17 +110,17 @@ def put_data(request):
                 for chunk in request.FILES['file'].chunks():
                     destination.write(chunk)
 
-            pdf_text = pdf2text(tmp_file_path)
+            pdf_text, pdf_keywords, word_count = pdf2text(tmp_file_path)
             try:
                 os.remove(tmp_file_path)
             except:
                 pass
 
-            classificaton, confidence = getClassification(pdf_text)
+            classificaton, confidence = getClassification(pdf_text, pdf_keywords)
 
             student_file.Classification = classificaton
             student_file.Confidence = confidence
-
+            student_file.wordCount = word_count
             form.save()
             return redirect('list_data')
     else:
