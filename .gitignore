@@ -2,3 +2,4 @@
 upload/
 media/
 static/*firebase*.json
+mlruns/
