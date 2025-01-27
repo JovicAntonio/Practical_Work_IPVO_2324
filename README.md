@@ -301,7 +301,7 @@ Model je radio između 5% i 10% lošije nego kad su uvedene i ključne riječi.
 
 ### Test modela
 
-![Test modela](Screenshot_2025-01-26_22-48-36.png)
+![Test modela](/images/Screenshot_2025-01-26_22-48-36.png)
 
 ### Izgled sučelja
 
