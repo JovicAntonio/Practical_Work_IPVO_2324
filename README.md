@@ -305,13 +305,13 @@ Model je radio između 5% i 10% lošije nego kad su uvedene i ključne riječi.
 
 ### Izgled sučelja
 
-![Početna stranica](Screenshot_2025-01-26_23-37-17.png)
+![Početna stranica](/images/Screenshot_2025-01-26_23-37-17.png)
 
-![Admin stranica](Screenshot_2025-01-26_23-40-23.png)
+![Admin stranica](/images/Screenshot_2025-01-26_23-40-23.png)
 
-![Unos dokumenata](Screenshot_2025-01-26_23-38-07.png)
+![Unos dokumenata](/images/Screenshot_2025-01-26_23-38-07.png)
 
-![Pregled dokumenata](Screenshot_2025-01-26_23-37-50.png)
+![Pregled dokumenata](/images/Screenshot_2025-01-26_23-37-50.png)
 
 ### Izvlačenje podataka
 
@@ -366,3 +366,7 @@ def pdf2text(pdf_path):
 
     return (summary, keywords, word_count)
 ```
+
+### MLFlow
+
+Zamišljeno je da se koristi i MLFlow, kako bismo servirali modele preko njega i radili pozive na servis, ali kada smo promislili malo i istražili za naš slučaj, i zaključili da nije potrebno servirati tako model jer bi u svakom slučaju trebali prvo preuzeti model sa MLFlow-a i nakon toga ga učitati u aplikaciji što bi vjerovatno opet usporilo rad aplikacije, a obzirom da nismo gradili model preko vlastitih računala nego u Google Colab-u, nije moguće registrirati model u MLFlow-u, već ga samo dodati u log.
